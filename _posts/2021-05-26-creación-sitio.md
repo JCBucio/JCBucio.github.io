@@ -16,6 +16,8 @@ En este *meta-post* quiero explicar de manera general cómo fue que creé mi sit
 
 {% include aligner.html images="posts-img/jekyll-logo.png" %}
 
+<br>
+
 ## Requerimientos
 Crear un sitio web estático con Jekyll requiere de habilidades y conocimientos básicos, algunos se muestran a continuación:
 - Tener conocimientos básicos de la terminal del sistema (cmd)
