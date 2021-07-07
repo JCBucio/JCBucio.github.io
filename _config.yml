@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: ""
+baseurl: "jcbucio.github.io"
 url: ""
 
 # THEME-SPECIFIC CONFIGURATION
