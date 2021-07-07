@@ -80,7 +80,7 @@
         </li>
         {% endif %} {% if site.data.social.share.email or site.theme_settings.email %}
         <li>
-            <a href="mailto:?subject=https://jcbucio.github.io{{ page.title }}"
+            <a href="mailto:?subject=https://jcbucio.github.io{{ page.url }}"
                target="_blank" title="{{ site.data.social.language.str_email }}">
                 <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
                 <span class="sr-only">{{ site.data.social.language.str_email | default: "Email" }}</span></a>
