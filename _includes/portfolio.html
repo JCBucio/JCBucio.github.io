@@ -1,0 +1,24 @@
+<!-- Portfolio Grid Section -->
+<div class="portfolio-grid">
+    {% for item in site.portfolio %}
+      <div class="portfolio-cell">
+          <a class="portfolio-link" data-keyboard="true" href="{{ item.url | relative_url }}" style="text-decoration:none;">
+              <img alt="" class="" src="{{ item.img | relative_url }}">
+                <h2 style="color:#ffffff;" align="center">
+                  {{ item.title }}
+                </h2>
+          </a>
+          {% if site.excerpt or site.theme_settings.excerpt %}
+              <div class="excerpt">
+                <p align="center">
+                  {% if site.excerpt == "truncate" %}
+                     {{ item.content | strip_html | truncate: '250' | escape }}
+                  {% else %}
+                     {{ item.excerpt | strip_html | escape }}
+                  {% endif %}
+                </p>
+              </div>
+          {% endif %}
+      </div>
+    {% endfor %}
+</div>
