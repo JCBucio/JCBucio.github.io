@@ -36,7 +36,7 @@ También se requieren recursos como:
 
 ## Instalando Jekyll
 Lo primero que debemos hacer es instalar Jekyll en nuestro ordenador (aquí estoy asumiendo que ya tienes Ruby instalado):
-[_Tutorial de instalación de Ruby en Windows y Mac._](https://youtu.be/LfP7Y9Ja6Qc){:target="_blank"}
+- [_Tutorial de instalación de Ruby en Windows y Mac._](https://youtu.be/LfP7Y9Ja6Qc){:target="_blank"}
 
 \>> Abrimos una terminal, puedes dar clic en "Buscar" y teclear cmd (también se suele llamar "Símbolo del sistema"):
 
