@@ -36,6 +36,7 @@ También se requieren recursos como:
 
 ## Instalando Jekyll
 Lo primero que debemos hacer es instalar Jekyll en nuestro ordenador (aquí estoy asumiendo que ya tienes Ruby instalado):
+[_Tutorial de instalación de Ruby en Windows y Mac._](https://youtu.be/LfP7Y9Ja6Qc){:target="_blank"}
 
 \>> Abrimos una terminal, puedes dar clic en "Buscar" y teclear cmd (también se suele llamar "Símbolo del sistema"):
 
@@ -95,7 +96,7 @@ Elegir el hosting para tu sitio web es tu decisión, existen muchos servicios de
 
 También puedes ver el código fuente de mi página en [mi perfil de Github](https://github.com/JCBucio){:target="_blank"}, está abierto al público y puede ser reutilizado por cualquiera. Para hacer este sitio me inspiré en la página web del [Dr. Christopher Lovell](https://www.christopherlovell.co.uk/){:target="_blank"}, dale un vistazo! Tiene muy buen contenido.
 
-En mi [portafolio](/portafolio/Mi-sitio-web) escribí acerca de mi experiencia realizando este proyecto, también añadí recursos útiles para sacarle todo el provecho a Jekyll.
+En mi [portafolio](/portafolio/Mi-sitio-web) escribí acerca de mi experiencia realizando este proyecto, también añadí recursos útiles para sacarle todo el provecho a Jekyll, así como las fuentes que utilicé para crear el sitio.
 
 <br>
 
