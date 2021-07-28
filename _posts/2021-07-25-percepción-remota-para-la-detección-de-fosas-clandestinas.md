@@ -8,7 +8,7 @@ thumbnail: "assets/img/thumbnails/decorrelation_new.jpg"
 feature-img: "assets/img/thumbnails/decorrelation_new.jpg"
 ---
 
-La Percepción Remota se ha planteado en varios estudios de la última década como una técnica que podría ayudar en la detección de fosas clandestinas en todo el país por su empleo de nuevas tecnologías como son los sensores multiespectrales.
+La Percepción Remota se ha planteado en varios estudios de la última década como una técnica que podría ayudar en la detección de fosas clandestinas en el país por su empleo de nuevas tecnologías como los sensores multiespectrales.
 
 <!--more-->
 
@@ -101,7 +101,7 @@ Mejoras y correcciones:
 3. Emplear muestras humanas para hacer una simulación más cercana a la realidad, aunque esto conlleva cuestiones éticas mayores.
 
 ## Alcances y aplicaciones
-La PR cuenta con una amplia gama de técnicas y tecnologías que podrían ponerse a disposición de la sociedad para aportar soluciones a conflictos como el que se plantea aquí. El uso correcto de dichas herramientas, así como encontrar nuevos alcances en los que el uso de la PR y técnicas afines puedan ser de contribución a alguna roblemática significaría un gran avance científico y social.
+La PR cuenta con una amplia gama de técnicas y tecnologías que podrían ponerse a disposición de la sociedad para aportar soluciones a conflictos como el que se plantea aquí. El uso correcto de dichas herramientas, así como encontrar nuevos alcances en los que el uso de la PR y técnicas afines puedan ser de contribución a alguna problemática significaría un gran avance científico y social.
 
 <br>
 
