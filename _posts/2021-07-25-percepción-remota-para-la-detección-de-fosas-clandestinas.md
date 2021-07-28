@@ -60,7 +60,7 @@ El incremento de materia orgánica y nitrógeno (_N_) se debe a la descomposici�
 #### Comparación de sensores comerciales
 Algunos sensores disponibles en el mercado para el análisis híperespectral son:
 
-- **Landsat:** Constelación de satelites con sensores multiespectrales.
+- **Landsat:** Constelación de satélites con sensores multiespectrales.
 - **World View SWIR:** Satélite comercial de alta resolución espacial.
 - **Micro MCA12:** Cámara multiespectral para aplicaciones forestales y de agricultura de precisión.
 - **AVIRIS:** Sensor híperespectral operado por el _[JPL](https://www.jpl.nasa.gov/){:target="_blank"} (Jet Propulsion Laboratory)_, cubre todo el rango óptico de onda corta (400-2500nm).
