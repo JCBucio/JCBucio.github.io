@@ -19,7 +19,7 @@ También es muy común que en el procesamiento de dichos datos necesitemos reali
 <br>
 
 ## Ejecutar comandos en la terminal desde Python
-Si queremos realizar una serie de tareas en la terminal que implican esperar a que se realicen procesos lentos y revisar el avance de dichos procesos consume mucho tiempo, podemos escribir un pequeño script en Python que nos puede ayudar a ejecutar estos comandos uno tras otro de forma consecutiva, así como escribir el **standard output** o los posibles **errores** que el programa genere a un archivo de texto que los guarde por nosotros.
+Si queremos realizar una serie de tareas en la terminal que implican esperar a que se realicen procesos lentos y revisar el avance de dichos procesos consume mucho tiempo, podemos escribir un pequeño script en Python que nos puede ayudar a ejecutar estos comandos uno tras otro de forma consecutiva, así como escribir el *standard output* o el *standard error* que el programa genere a un archivo de texto que los guarde por nosotros.
 
 ```python
 import subprocess
@@ -42,11 +42,11 @@ with open('log.txt', 'w') as f:
 En este script importamos la librería `subprocess` la cual nos servirá para ejecutar comandos mientras nuestro script esté corriendo. También hay algunos parámetros importantes al llamar esta función:
 
 - `shell=True`: Este parámetro nos permite ingresar múltiples argumentos en nuestro comando.
-- `stout=f`: Aquí asignamos el **standard out** a la variable f para escribirlo en nuestro archivo de texto.
-- `sterr=f`: En el caso de que nuestro comando devuelva un error, el **standard error** se asigna a la variable f para escribirlo en nuestro archivo de texto.
+- `stdout=f`: Aquí asignamos el *standard out* a la variable f para escribirlo en nuestro archivo de texto.
+- `stderr=f`: En el caso de que nuestro comando devuelva un error, el *standard error* se asigna a la variable f para escribirlo en nuestro archivo de texto.
 - `text=True`: Este parámetro decodifica el output para poder ser leído a manera de texto.
 
-En el código de ejemplo se ejecutan 2 comandos, el primero no escribe el **standard output** ni el **standard error** en ningún lugar ya que es un comando que crea archivos para almacenar datos, el segundo comando lo utilizo para procesar datos sísmicos con el programa [REDPy](https://github.com/ahotovec/REDPy){:target="blank"}, este comando toma más tiempo y escribe el output en el archivo de texto `log.txt`.
+En el código de ejemplo se ejecutan 2 comandos, el primero no escribe el *standard output* ni el *standard error* en ningún lugar ya que es un comando que crea archivos para almacenar datos, el segundo comando lo utilizo para procesar datos sísmicos con el programa [REDPy](https://github.com/ahotovec/REDPy){:target="blank"}, este comando toma más tiempo y escribe el output en el archivo de texto `log.txt`.
 
 <br>
 
@@ -238,7 +238,7 @@ mail_notify.send(msg)
 <br>
 
 ### Más usos y ejemplos
-Debido a que Python es un lenguaje muy flexible y lleno de librerías para procesar todo tipo de información podemos darle el uso a estos scripts para prácticamente cualquier proceso que estemos llevando a cabo en nuestro ordenador. Los scripts detallados arriba pueden ser de bastante utilidad en diferentes áreas del procesamiento de datos que están fuera del alcance de este post, éstos son algunos ejemplos:
+Debido a que Python es un lenguaje muy flexible y lleno de librerías para procesar todo tipo de información podemos darle el uso a estos scripts para prácticamente cualquier proceso que estemos llevando a cabo en nuestro ordenador. Los scripts detallados arriba pueden ser de bastante utilidad en diferentes áreas de la ciencia de datos que están fuera del alcance de este post, éstos son algunos ejemplos:
 
 - Entrenamiento de _machine learning_: [Your First Machine Learning Project in Python](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/){:target="blank"}
 - Procesamiento de  _redes neuronales_: [Your First Deep Learning Project in Python](https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/){:target="blank"}
