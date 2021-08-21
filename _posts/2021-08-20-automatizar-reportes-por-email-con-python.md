@@ -42,7 +42,7 @@ with open('log.txt', 'w') as f:
 En este script importamos la librería `subprocess` la cual nos servirá para ejecutar comandos mientras nuestro script esté corriendo. También hay algunos parámetros importantes al llamar esta función:
 
 - `shell=True`: Este parámetro nos permite ingresar múltiples argumentos en nuestro comando.
-- `stdout=f`: Aquí asignamos el *standard out* a la variable f para escribirlo en nuestro archivo de texto.
+- `stdout=f`: Aquí asignamos el *standard output* a la variable f para escribirlo en nuestro archivo de texto.
 - `stderr=f`: En el caso de que nuestro comando devuelva un error, el *standard error* se asigna a la variable f para escribirlo en nuestro archivo de texto.
 - `text=True`: Este parámetro decodifica el output para poder ser leído a manera de texto.
 
