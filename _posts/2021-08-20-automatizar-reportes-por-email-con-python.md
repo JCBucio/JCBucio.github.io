@@ -44,7 +44,7 @@ En este script importamos la librería `subprocess` la cual nos servirá para ej
 - `shell=True`: Este parámetro nos permite ingresar múltiples argumentos en nuestro comando.
 - `stout=f`: Aquí asignamos el **standard out** a la variable f para escribirlo en nuestro archivo de texto.
 - `sterr=f`: En el caso de que nuestro comando devuelva un error, el **standard error** se asigna a la variable f para escribirlo en nuestro archivo de texto.
-- `text=True`: Este parámtro decodifica el output para poder ser leído a manera de texto.
+- `text=True`: Este parámetro decodifica el output para poder ser leído a manera de texto.
 
 En el código de ejemplo se ejecutan 2 comandos, el primero no escribe el **standard output** ni el **standard error** en ningún lugar ya que es un comando que crea archivos para almacenar datos, el segundo comando lo utilizo para procesar datos sísmicos con el programa [REDPy](https://github.com/ahotovec/REDPy){:target="blank"}, este comando toma más tiempo y escribe el output en el archivo de texto `log.txt`.
 
@@ -149,7 +149,7 @@ def send(msg, server='smtp.gmail.com', port='587'):
 <br>
 
 ### Crear una gráfica con los datos procesados y enviarla por email
-Muchas veces queremos que nuestros datos se vean reflejados en gráficas que nos permitan interpretarlos de una manera más rápida y sencilla. En este ejemplo utilizo matplotlib y pandas para darle formato a mis datos y graficarlos de manera que pueda realizar interpretaciones más precisas:
+Muchas veces queremos que nuestros datos se vean reflejados en gráficas que nos permitan interpretarlos de una manera más rápida y sencilla. En este ejemplo utilizo _matplotlib_ y _pandas_ para darle formato a mis datos y graficarlos de manera que pueda realizar interpretaciones más precisas:
 
 ```python
 import pandas as pd
@@ -191,7 +191,7 @@ plt.savefig("events_per_month.png")
 
 <br>
 
-En este script le di formato a un archivo llamado `dailycounts.csv` que contiene 365 filas y 862 columnas sobre detecciones de sismos repetitivos, claramente sería muy complicado modificar este archivo en un documento de excel, es por eso que la librería [pandas](https://pandas.pydata.org/){:target="blank"} nos ayuda a realizar las estadíticas y el formato de la tabla sin la necesidad de ver los datos en pantalla.
+En este script le di formato a un archivo llamado `dailycounts.csv` que contiene 365 filas y 862 columnas sobre detecciones de sismos repetitivos, claramente sería muy complicado modificar este archivo en un documento de excel, es por eso que la librería [pandas](https://pandas.pydata.org/){:target="blank"} nos ayuda a realizar las estadísticas y el formato de la tabla sin la necesidad de ver los datos en pantalla.
 
 De igual manera [matplotlib](https://matplotlib.org/){:target="blank"} juega un papel importante ya que nos va a ayudar a generar una gráfica personalizada a nuestro gusto para hacer un análisis más visiblemente detallado de los datos, esta es la gráfica que genera el script:
 
@@ -201,7 +201,7 @@ De igual manera [matplotlib](https://matplotlib.org/){:target="blank"} juega un 
 <br>
 
 ## Integrando todas las partes
-Ya tenemos nuestro script con las funciones para generar y mandar nuestro email así como también tenemos nuestro programa que le da formato a nuestros datos y los grafica. Sólo nos queda integrar todos nuestros comandos en el primer script de este post: *run_commands.py*. Tendríamos algo como esto:
+Ya tenemos nuestro script con las funciones para generar y mandar nuestro email, así como también tenemos nuestro programa que le da formato a nuestros datos y los grafica. Sólo nos queda integrar todos nuestros comandos en el primer script de este post: *run_commands.py*. Tendríamos algo como esto:
 
 ```python
 import mail_notify
