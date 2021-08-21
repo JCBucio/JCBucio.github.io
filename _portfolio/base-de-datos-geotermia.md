@@ -42,4 +42,4 @@ Un gran beneficio de hacer este repositorio accesible para cualquiera es que se 
 <br>
 
 #### Comentarios, sugerencias y opiniones
-_Si tienes algún comentario, sugerencia u opinión házmelos saber en los comentarios de abajo, no requieres de ninguna cuenta, sólo elige un nombre de usuario (puede ser tu nombre) y un correo (opcional). Todos los comentarios son enviados a un moderador, por lo tanto tardarán un poco en publicarse._
+_Si tienes algún comentario, sugerencia u opinión házmelo saber en los comentarios de abajo, no requieres de ninguna cuenta, sólo elige un nombre de usuario (puede ser tu nombre) y un correo (opcional). Todos los comentarios son enviados a un moderador, por lo tanto tardarán un poco en publicarse._
