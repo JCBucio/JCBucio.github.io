@@ -12,25 +12,25 @@ En este *meta-post* quiero explicar de manera general cómo fue que creé mi sit
 
 <!--more-->
 
-[Jekyll](https://jekyllrb.com/){:target="_blank"} es un generador de sitios web estáticos, los sitios web estáticos son aquellos que suelen tener una estructura simple, no requieren de una base de datos o plantillas que se descarguen de la web, por lo tanto dichos sitios son más rápidos. Los sitios web estáticos son ideales para crear blogs, sitios de presentación personal o de documentación.
+[Jekyll](https://jekyllrb.com/){:target="_blank"} es un generador de sitios web estáticos, los sitios web estáticos son aquellos que suelen tener una estructura simple, no requieren de una conexión a una base de datos y siempre muestran el mismo contenido a todos los usuarios, por lo tanto dichos sitios son más rápidos. Los sitios web estáticos son ideales para crear blogs, sitios de presentación personal o de documentación.
 
 {% include aligner.html images="posts-img/jekyll-logo.png" %}
 
 <br>
 
 ## Requerimientos
-Crear un sitio web estático con Jekyll requiere de habilidades y conocimientos básicos, algunos se muestran a continuación:
+Crear un sitio web estático con Jekyll requiere de habilidades y conocimientos muy fáciles de obtener por medio de tutoriales o cursos online, algunos de estos conocimientos se muestran a continuación:
 - Tener conocimientos básicos de la terminal del sistema (cmd)
 - Nociones en la estructura de HTML y CSS
-- Uso básico de las [RubyGems](https://rubygems.org/){:target="_blank"}
+- Entender las funciones de las [RubyGems](https://rubygems.org/){:target="_blank"}
 - *Opcional:* Manejo de repositorios de [Github](https://github.com/){:target="_blank"}
 
 También se requieren recursos como:
-- Un editor de texto de tu preferencia (yo utilizo [Atom](https://atom.io/){:target="_blank"})
+- Un editor de texto de tu preferencia (yo utilizo [VScode](https://code.visualstudio.com/){:target="_blank"})
 - Descargar e instalar [Ruby](https://www.ruby-lang.org/es/){:target="_blank"} en tu ordenador
 - *Opcional:* Crear una cuenta en [Github](https://github.com/){:target="_blank"}
 
-**Importante:** *Esta documentación está pensada en Windows 10, sin embargo no difiere mucho de sistemas macOS o Linux.*
+**Importante:** *Esta documentación está pensada en Windows 10, sin embargo, no difiere mucho de sistemas macOS o Linux.*
 
 <br>
 
