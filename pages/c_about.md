@@ -17,7 +17,7 @@ Creé este sitio web con los siguientes objetivos:
 
 - Compartir mi conocimiento sobre técnicas y habilidades útiles para las Ciencias de la Tierra.
 - Crear una comunidad geocientífica que aporte ideas y posts a mi blog.
-- Construir un portafolio personal para presentar mis proyectos personales y académicos.
+- Construir un portafolio para presentar mis proyectos personales y académicos.
 
 Si te interesa saber más de mí o quisieras participar en mi blog escribiendo un post de algún tema del que tengas conocimiento no dudes en contactarme por cualquiera de mis redes (las encuentras en los pies de página), me encantaría crear una comunidad de personas que les guste compartir su conocimiento sobre Ciencias de la Tierra y sus aplicaciones.
 
