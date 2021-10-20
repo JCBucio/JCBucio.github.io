@@ -5,7 +5,7 @@ permalink: /about/
 feature-img: "assets/img/feature-img/travel.jpeg"
 ---
 
-¡Hola! Bienvenido a mi blog y portafolio personal, mi nombre es Juan Carlos Bucio y actualmente estudio Geociencias (Ciencias de la Tierra) en la Escuela Nacional de Estudios Superiores, Unidad Morelia, UNAM. Me gustan todos los temas que se relacionen con los procesos físicos internos y externos de la Tierra. Actualmente estoy trabajando con un doctor sismólogo en un programa que detecta sismos repetitivos, también estoy liberando mi servicio social con una doctora química haciendo una base de datos de Geotermia, escribí más sobre estos temas en mi [portafolio](/portafolio/).
+¡Hola! Bienvenido a mi blog y portafolio personal, mi nombre es Juan Carlos Bucio y actualmente estudio Geociencias con énfasis en Geofísica Aplicada en la Escuela Nacional de Estudios Superiores, Unidad Morelia, UNAM. Me interesa mucho la exploración del subsuelo para la detección de minerales, hidrocarburos, depósitos acuíferos, etc. En mi blog también verás muchos posts acerca de Ciencia de Datos, la cual trabajo mucho y es bastante interesante. En mis tiempos libres me gusta crear proyectos personales para desarrollar nuevas habilidades que me sean de utilidad en un futuro, éstos proyectos, así como mis trabajos de académicos de mayor relevancia los puedes encontrar en mi [portafolio](/portafolio/).
 
 {% include aligner.html
   images="posts-img/pcampo_paricutin.jpeg"
@@ -17,7 +17,7 @@ Creé este sitio web con los siguientes objetivos:
 
 - Compartir mi conocimiento sobre técnicas y habilidades útiles para las Ciencias de la Tierra.
 - Crear una comunidad geocientífica que aporte ideas y posts a mi blog.
-- Construir un portafolio personal para presentar mis proyectos.
+- Construir un portafolio personal para presentar mis proyectos personales y académicos.
 
 Si te interesa saber más de mí o quisieras participar en mi blog escribiendo un post de algún tema del que tengas conocimiento no dudes en contactarme por cualquiera de mis redes (las encuentras en los pies de página), me encantaría crear una comunidad de personas que les guste compartir su conocimiento sobre Ciencias de la Tierra y sus aplicaciones.
 
