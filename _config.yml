@@ -1,15 +1,15 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: ""
+url: "jcbucio.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Juan Carlos Bucio T.                                    # site's title
-description: "Blog y portafolio personal de proyectos aplicados a Ciencias de la Tierra"      # used by search engines
+description: "Juan Carlos Bucio blog y portafolio personal"      # used by search engines
 avatar: https://avatars.githubusercontent.com/u/73540544?v=4     # Empty for no avatar in navbar
 favicon: assets/pick.png                         # Icon displayed in the tab
 
 # Header and footer text
-header_text: Blog y portafolio personal  # Change Blog header text
+header_text: Bienvenido a mi sitio web  # Change Blog header text
 header_feature_image: assets/img/feature-img/earth.jpg
 footer_text: >
   <i>Copyright © 2021 Juan Carlos Bucio T.</i>

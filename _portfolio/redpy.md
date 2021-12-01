@@ -42,7 +42,7 @@ El programa también cuenta con la flexibilidad de ajustar los parámetros de ac
 <br>
 
 ## Alcances y aplicaciones
-El objetivo de aprender y experimentar con este programa así como entender sus funciones es de utilidad para procesar datos de eventos sísmicos históricos, datos que en un futuro nos podrían ayudar a realizar detecciones tempranas sobre eventos potenciales.
+El objetivo de aprender y experimentar con este programa así como entender sus funciones es de utilidad para procesar datos de eventos sísmicos históricos, datos que en un futuro nos podrían ayudar a detectar zonas con alto peligro sísmico que deben de estar en constante monitoreo.
 
 Otra gran aplicación de este programa se está dando en los eventos sísmicos en volcanes, producidos principalmente por el movimento del magma debajo de la superficie, lo cual nos sugiere que la detección de dichos eventos nos podría ayudar a sondear aumentos de actividad volcánica en áreas de estudio.
 

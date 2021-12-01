@@ -5,7 +5,7 @@ permalink: /about/
 feature-img: "assets/img/feature-img/travel.jpeg"
 ---
 
-¡Hola! Bienvenido a mi blog y portafolio personal, mi nombre es Juan Carlos Bucio y actualmente estudio Geociencias con énfasis en Geofísica Aplicada en la Escuela Nacional de Estudios Superiores, Unidad Morelia, UNAM. Me interesa mucho la exploración del subsuelo para la detección de minerales, hidrocarburos, depósitos acuíferos, etc. En mi blog también verás muchos posts acerca de Ciencia de Datos, la cual trabajo mucho y es bastante interesante. En mis tiempos libres me gusta crear proyectos personales para desarrollar nuevas habilidades que me sean de utilidad en un futuro, éstos proyectos, así como mis trabajos de académicos de mayor relevancia los puedes encontrar en mi [portafolio](/portafolio/).
+¡Hola! Bienvenidx a mi página web, mi nombre es Juan Carlos Bucio y actualmente estudio Geociencias con énfasis en Geofísica Aplicada en la Escuela Nacional de Estudios Superiores, Unidad Morelia, UNAM. Me interesa mucho la exploración del subsuelo para la detección de minerales, hidrocarburos, depósitos acuíferos, etc. En mi [blog](/) verás muchos posts acerca de programación con Python, un lenguaje que utilizo bastante para el procesamiento de datos y automatización de procesos. En la sección de mi [portafolio](/portafolio/) podrás encontrar mis proyectos académicos y personales que he realizado así como una descripción detallada de los mismos.
 
 {% include aligner.html
   images="posts-img/pcampo_paricutin.jpeg"
@@ -16,7 +16,7 @@ feature-img: "assets/img/feature-img/travel.jpeg"
 Creé este sitio web con los siguientes objetivos:
 
 - Compartir mi conocimiento sobre técnicas y habilidades útiles para las Ciencias de la Tierra.
-- Crear una comunidad geocientífica que aporte ideas y posts a mi blog.
+- Demostrar la utilidad de la programación y sus aplicaciones en las Geociencias.
 - Construir un portafolio para presentar mis proyectos personales y académicos.
 
 Si te interesa saber más de mí o quisieras participar en mi blog escribiendo un post de algún tema del que tengas conocimiento no dudes en contactarme por cualquiera de mis redes (las encuentras en los pies de página), me encantaría crear una comunidad de personas que les guste compartir su conocimiento sobre Ciencias de la Tierra y sus aplicaciones.
