@@ -5,7 +5,7 @@ permalink: /about/
 feature-img: "assets/img/feature-img/travel.jpeg"
 ---
 
-¡Hola! Bienvenidx a mi página web, mi nombre es Juan Carlos Bucio y actualmente estudio Geociencias con énfasis en Geofísica Aplicada en la Escuela Nacional de Estudios Superiores, Unidad Morelia, UNAM. Me interesa mucho la exploración del subsuelo para la detección de minerales, hidrocarburos, depósitos acuíferos, etc. En mi [blog](/) verás muchos posts acerca de programación con Python, un lenguaje que utilizo bastante para el procesamiento de datos y automatización de procesos. En la sección de mi [portafolio](/portafolio/) podrás encontrar mis proyectos académicos y personales que he realizado así como una descripción detallada de los mismos.
+¡Hola! Bienvenidos a mi página web, mi nombre es Juan Carlos Bucio y actualmente estudio Geociencias con énfasis en Geofísica Aplicada en la Escuela Nacional de Estudios Superiores, Unidad Morelia, UNAM. Me interesa mucho la exploración del subsuelo para la detección de minerales, hidrocarburos, depósitos acuíferos, etc. En mi [blog](/) verás muchos posts acerca de programación con Python, un lenguaje que utilizo bastante para el procesamiento de datos y automatización de procesos. En la sección de mi [portafolio](/portafolio/) podrás encontrar mis proyectos académicos y personales que he realizado así como una descripción detallada de los mismos.
 
 {% include aligner.html
   images="posts-img/pcampo_paricutin.jpeg"
