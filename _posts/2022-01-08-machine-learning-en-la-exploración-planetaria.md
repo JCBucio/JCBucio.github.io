@@ -4,7 +4,7 @@ title: Machine Learning en la exploración planetaria
 tags: [IA, Machine Learning, Deep Learning, Marte]
 excerpt_separator: <!--more-->
 permalink: /blog/:year/:title
-thumbnail: "assets/img/thumbnails/Perseverance-Close-Up-Figure.jpg"
+thumbnail: "assets/img/thumbnails/Perseverance-Close-Up.jpeg"
 feature-img: "assets/img/thumbnails/Perseverance-Close-Up-Figure_2.jpg"
 ---
 El desarrollo de rovers autónomos ha sido clave en las misiones de exploración planetaria llevadas a cabo en los últimos años, y lo seguirá siendo durante las misiones futuras debido a su efectividad y el aprovechamiento de recursos que estas tecnologías plantean.
