@@ -4,7 +4,7 @@ url: "jcbucio.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Juan Carlos Bucio T.                                    # site's title
-description: "Juan Carlos Bucio blog y portafolio personal"      # used by search engines
+description: "Blog y portafolio personal"      # used by search engines
 avatar: https://avatars.githubusercontent.com/u/73540544?v=4     # Empty for no avatar in navbar
 favicon: assets/pick.png                         # Icon displayed in the tab
 
@@ -12,7 +12,7 @@ favicon: assets/pick.png                         # Icon displayed in the tab
 header_text: Bienvenido a mi sitio web  # Change Blog header text
 header_feature_image: assets/img/feature-img/earth.jpg
 footer_text: >
-  <i>Copyright © 2021 Juan Carlos Bucio T.</i>
+  <i>Copyright © 2022 Juan Carlos Bucio T.</i>
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable

@@ -10,7 +10,7 @@ permalink: /portafolio/Mi-sitio-web
 
 ![image]({{ "assets/img/portfolio/mi-sitio.png" | relative_url }})
 
-Mi página web es uno de mis proyectos favoritos, aquí daré un poco de documentación y fuentes que fueron de utilidad para mí al crear este sitio.<!--more--> En la sección de mi blog hice este [*meta-post*](/blog/2021/creación-sitio) en el que explico de manera general cómo crear un sitio como el mío. Usaré este espacio para explicar las dificultades y los retos de manera más específica al crear un sitio personal prácticamente desde cero.
+Mi página web es uno de mis proyectos favoritos, aquí daré un poco de documentación y fuentes que fueron de utilidad para mí al crear este sitio.<!--more--> En la sección de mi blog hice este [*meta-post*](/blog/2021/cómo-hacer-este-sitio) en el que explico de manera general cómo crear un sitio como el mío. Usaré este espacio para explicar las dificultades y los retos de manera más específica al crear un sitio personal prácticamente desde cero.
 
 <br>
 
@@ -20,7 +20,7 @@ Mi experiencia en desarrollo web es muy corta, sin embargo aprender habilidades 
 <br>
 
 ## Rasgos importantes
-Hay algunas características que he implementado en mi página pensando en la usabilidad y la comodidad de los lectores. Una de ellas y tal vez la más importante de todas es que **no hay y no habrá publicidad** en mi sitio, todos los links que veas son completamente seguros y están dirigidos a páginas de documentación o de recursos que utilicé para el desarrollo de la página y de cada post.
+Hay algunas características que he implementado en mi página pensando en hacerla simple y cómoda para los lectores. Una de ellas y tal vez la más importante de todas es que **no hay y no habrá publicidad** en mi sitio, todos los links que veas son completamente seguros y están dirigidos a páginas de documentación o de recursos que utilicé para el desarrollo de la página y de cada post.
 
 Otro rasgo importante son las cajas de comentarios que encontrarás al final de cada post de mi blog o de mi portafolio. Éstas cajas de comentarios son hechas por medio de [Cusdis](https://cusdis.com/){:target="_blank"}, un sistema de comentarios de código abierto, eso quiere decir que cualquiera las puede utilizar para implementarlas en sus sitios sin la necesidad de pagar o usar otras apps con publicidad que ofrecen el mismo servicio. Lo mejor de este sistema de comentarios es que los lectores no requieren de iniciar sesión en ninguna plataforma para hacer un comentario, sólo se solicita un nombre de usuario y un correo de manera opcional.
 
@@ -28,6 +28,8 @@ Otro rasgo importante son las cajas de comentarios que encontrarás al final de 
   images="portfolio/cusdis.png"
   caption="Cusdis logo"
 %}
+
+Tal vez una de las mejores características de las páginas como la mía es que son completamente **gratuitas**, debido a que es de código abierto cualquiera puede utilizarlo como referencia para proyectos de distintos tipos. El dominio también es gratuito y de por vida, solamente se requiere de una cuenta en [Github](https://github.com/){:target="_blank"}.
 
 ## Fuentes y recursos
 En esta lista voy a dejar algunas fuentes y recursos que utilicé a lo largo del desarrollo de mi página:

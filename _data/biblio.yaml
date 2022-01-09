@@ -1,15 +1,19 @@
-- authors: 2017. IBERO, CMDPDH
-  title: "[Violencia y terror. Hallazgos sobre fosas clandestinas en México](https://ibero.mx/files/informe_fosas_clandestinas_2017.pdf)"
+- authors: IBERO, CMDPDH
+  title: "[Violencia y terror. Hallazgos sobre fosas clandestinas en México. 2017.](https://ibero.mx/files/informe_fosas_clandestinas_2017.pdf)"
   key: informe_ibero
 
-- authors: 2018. Sistema Universitario Jesuita de México, Data Cívica, CMDPDH
-  title: "[Situación de fosas clandestinas en México](http://www.cmdpdh.org/publicaciones-pdf/cmdpdh-situacion-de-fosas-clandestinas-en-mexico.pdf)"
+- authors: Sistema Universitario Jesuita de México, Data Cívica, CMDPDH
+  title: "[Situación de fosas clandestinas en México. 2018.](http://www.cmdpdh.org/publicaciones-pdf/cmdpdh-situacion-de-fosas-clandestinas-en-mexico.pdf)"
   key: informe_cmdpdh
 
-- authors: 2014. Dr. José Luis Silván Cárdenas
-  title: "[Viabilidad de las imágenes híperespectrales para la detección de fosas clandestinas en México](http://pr.centrogeo.org.mx/informes/PN249205.pdf)"
+- authors: José Luis Silván C.
+  title: "[Viabilidad de las imágenes híperespectrales para la detección de fosas clandestinas en México. 2014.](http://pr.centrogeo.org.mx/informes/PN249205.pdf)"
   key: informe_pr
 
 - authors: CentroGeo
   title: "[Percepción Remota](https://www.centrogeo.org.mx/index.php/investigacion/area-05)"
   key: centrogeo
+
+- authors: B. Rothrock, J. Papon, R. Kennedy, M. Ono, M. Heverly, C. Cunningham. Jet Propulsion Laboratory, California Institute of Technology. Robotics Institute, Carnegie Mellon University.
+  title: "[SPOC: Deep Learning-based Terrain Classification for Mars Rover Missions. 2016.](https://arc.aiaa.org/doi/abs/10.2514/6.2016-5539)"
+  key: spoc_mars

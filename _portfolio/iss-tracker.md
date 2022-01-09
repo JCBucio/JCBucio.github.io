@@ -26,7 +26,7 @@ La _ISS_ (International Space Station) por sus siglas en inglés es el objeto en
 
 La _ISS_ orbita la Tierra a alrededor de 400 km de altura a una velocidad aproximada de 27,600 km/h, es decir, la estación viaja a 7 kilómetros por segundo. Esto quiere decir que la estación le da una vuelta entera a la Tierra cada 90 minutos, así es, los astronautas que se encuentran en la estación ven un amanecer cada 45 minutos y un atardecer en el mismo tiempo.
 
-El programa en el que trabajé establece una conexión con una _API_ (Aplication Programming Interface), las _APIs_ son aplicaciones web (en su mayoría) que nos permiten obtener información de plataformas de acceso público por medio de consultas a los servidores que soportan dichas plataformas. En este caso la _API_ que utilicé es [Open Notify](http://open-notify.org/Open-Notify-API/){:target="_blank"} creada por Nathan Bergey.
+El programa en el que trabajé establece una conexión con una _API_ (Aplication Programming Interface), las cuales nos permiten obtener información de plataformas de acceso público por medio de consultas a los servidores que soportan dichas plataformas. En este caso la _API_ que utilicé es [Open Notify](http://open-notify.org/Open-Notify-API/){:target="_blank"} creada por Nathan Bergey.
 
 <br>
 
@@ -80,7 +80,7 @@ Para visualizar el mapa debemos copiar y pegar la dirección que nos arroja la t
 
 ![iss-tracker]({{ "/assets/img/portfolio/iss-tracker.png" | relative_url }})
 
-El punto azul dentro del mapa es la ubicación de la _ISS_ al momento de correr el programa, si ubicamos el mouse sobre el punto **Dash** nos dará las coordenadas del punto en la Tierra.
+El punto azul dentro del mapa es la ubicación de la _ISS_ al momento de correr el programa, si ubicamos el mouse sobre el punto *Dash* nos dará las coordenadas del punto en la Tierra.
 
 <br>
 
