@@ -10,7 +10,7 @@ permalink: /portafolio/Mi-sitio-web
 
 ![image]({{ "assets/img/portfolio/mi-sitio.png" | relative_url }})
 
-Mi página web es uno de mis proyectos favoritos, aquí daré un poco de documentación y fuentes que fueron de utilidad para mí al crear este sitio.<!--more--> En la sección de mi blog hice este [*meta-post*](/blog/2021/cómo-hacer-este-sitio) en el que explico de manera general cómo crear un sitio como el mío. Usaré este espacio para explicar las dificultades y los retos de manera más específica al crear un sitio personal prácticamente desde cero.
+Mi página web es uno de mis proyectos favoritos, aquí daré un poco de documentación y fuentes que fueron de utilidad para mí al crear este sitio.<!--more--> En la sección de mi blog hice este [*meta-post*](/blog/2021/como-hacer-este-sitio) en el que explico de manera general cómo crear un sitio como el mío. Usaré este espacio para explicar las dificultades y los retos de manera más específica al crear un sitio personal prácticamente desde cero.
 
 <br>
 

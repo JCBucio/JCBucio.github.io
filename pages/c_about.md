@@ -21,7 +21,7 @@ Creé este sitio web con los siguientes objetivos:
 
 Si te interesa saber más de mí o quisieras participar en mi blog escribiendo un post de algún tema del que tengas conocimiento no dudes en contactarme por cualquiera de mis redes (las encuentras en los pies de página), me encantaría crear una comunidad de personas que les guste compartir su conocimiento sobre Ciencias de la Tierra y sus aplicaciones.
 
-También hice este [*meta-post*](/blog/2021/cómo-hacer-este-sitio) en el que explico de manera general cómo hice esta página web, es muy sencillo!
+También hice este [*meta-post*](/blog/2021/como-hacer-este-sitio) en el que explico de manera general cómo hice esta página web, es muy sencillo!
 
 ## Imágenes externas
 _Todas las imágenes externas utilizadas para crear este sitio web fueron obtenidas por medio de [Pexels](https://www.pexels.com/es-es/){:target="_blank"} y [Unsplash](https://unsplash.com/){:target="_blank"}, sitios web para descargar imágenes de manera gratuita y libres de derechos de autor._
