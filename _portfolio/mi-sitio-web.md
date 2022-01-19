@@ -15,31 +15,31 @@ Mi página web es uno de mis proyectos favoritos, aquí daré un poco de documen
 <br>
 
 ## Tiempo empleado
-Mi experiencia en desarrollo web es muy corta, sin embargo aprender habilidades como el manejo de HTML y CSS no es tan complicado como parece, crear este sitio me tomó aproximadamente un mes dedicando alrededor de 2-4 horas diarias 5 días a la semana, este tiempo incluye haber aprendido a utilizar [Jekyll](https://jekyllrb.com/){:target="_blank"} **desde cero** ya que fue algo totalmente nuevo para mí. Cabe resaltar que cuando se crea una página directamente desde el código se requiere de mucha paciencia debido a que pueden haber errores mínimos (ortográficos o de sintaxis) que pueden ser bastante molestos.
+Mi experiencia en desarrollo web es muy corta, sin embargo aprender habilidades como el manejo de HTML y CSS no es tan complicado como parece, crear este sitio me tomó aproximadamente un mes dedicando alrededor de 2-4 horas diarias 5 días a la semana, este tiempo incluye haber aprendido a utilizar [Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"} **desde cero** ya que fue algo totalmente nuevo para mí. Cabe resaltar que cuando se crea una página directamente desde el código se requiere de mucha paciencia debido a que pueden haber errores mínimos (ortográficos o de sintaxis) que pueden ser bastante molestos.
 
 <br>
 
 ## Rasgos importantes
 Hay algunas características que he implementado en mi página pensando en hacerla simple y cómoda para los lectores. Una de ellas y tal vez la más importante de todas es que **no hay y no habrá publicidad** en mi sitio, todos los links que veas son completamente seguros y están dirigidos a páginas de documentación o de recursos que utilicé para el desarrollo de la página y de cada post.
 
-Otro rasgo importante son las cajas de comentarios que encontrarás al final de cada post de mi blog o de mi portafolio. Éstas cajas de comentarios son hechas por medio de [Cusdis](https://cusdis.com/){:target="_blank"}, un sistema de comentarios de código abierto, eso quiere decir que cualquiera las puede utilizar para implementarlas en sus sitios sin la necesidad de pagar o usar otras apps con publicidad que ofrecen el mismo servicio. Lo mejor de este sistema de comentarios es que los lectores no requieren de iniciar sesión en ninguna plataforma para hacer un comentario, sólo se solicita un nombre de usuario y un correo de manera opcional.
+Otro rasgo importante son las cajas de comentarios que encontrarás al final de cada post de mi blog o de mi portafolio. Éstas cajas de comentarios son hechas por medio de [Cusdis](https://cusdis.com/){:target="_blank" rel="noopener noreferrer"}, un sistema de comentarios de código abierto, eso quiere decir que cualquiera las puede utilizar para implementarlas en sus sitios sin la necesidad de pagar o usar otras apps con publicidad que ofrecen el mismo servicio. Lo mejor de este sistema de comentarios es que los lectores no requieren de iniciar sesión en ninguna plataforma para hacer un comentario, sólo se solicita un nombre de usuario y un correo de manera opcional.
 
 {% include aligner.html
   images="portfolio/cusdis.png"
   caption="Cusdis logo"
 %}
 
-Tal vez una de las mejores características de las páginas como la mía es que son completamente **gratuitas**, debido a que es de código abierto cualquiera puede utilizarlo como referencia para proyectos de distintos tipos. El dominio también es gratuito y de por vida, solamente se requiere de una cuenta en [Github](https://github.com/){:target="_blank"}.
+Tal vez una de las mejores características de las páginas como la mía es que son completamente **gratuitas**, debido a que es de código abierto cualquiera puede utilizarlo como referencia para proyectos de distintos tipos. El dominio también es gratuito y de por vida, solamente se requiere de una cuenta en [Github](https://github.com/){:target="_blank" rel="noopener noreferrer"}.
 
 ## Fuentes y recursos
 En esta lista voy a dejar algunas fuentes y recursos que utilicé a lo largo del desarrollo de mi página:
 
-- Tutorial de Jekyll: [Jekyll - Static Site Generator Tutorial](https://youtu.be/T1itpPvFWHI){:target="_blank"} de [Mike Dane](https://www.youtube.com/channel/UCvmINlrza7JHB1zkIOuXEbw){:target="_blank"}
-- Tema principal: [Type-on-Strap](https://github.com/sylhare/Type-on-Strap){:target="_blank"} de [Sylhare](https://github.com/sylhare/){:target="_blank"}
-- Imágenes externas: [Pexels](https://www.pexels.com/es-es/){:target="_blank"} y [Unsplash](https://unsplash.com/){:target="_blank"}
-- Botón *back-to-top*: [vanilla-back-to-top](https://github.com/vfeskov/vanilla-back-to-top){:target="_blank"} de [Vlad Feskov](https://github.com/vfeskov){:target="_blank"}
-- Hosting: [Githubpages](https://pages.github.com/){:target="_blank"}
-- Caja de comentarios: [Cusdis](https://cusdis.com/){:target="_blank"} de [Randy](https://github.com/djyde){:target="_blank"}
+- Tutorial de Jekyll: [Jekyll - Static Site Generator Tutorial](https://youtu.be/T1itpPvFWHI){:target="_blank" rel="noopener noreferrer"} de [Mike Dane](https://www.youtube.com/channel/UCvmINlrza7JHB1zkIOuXEbw){:target="_blank" rel="noopener noreferrer"}
+- Tema principal: [Type-on-Strap](https://github.com/sylhare/Type-on-Strap){:target="_blank" rel="noopener noreferrer"} de [Sylhare](https://github.com/sylhare/){:target="_blank" rel="noopener noreferrer"}
+- Imágenes externas: [Pexels](https://www.pexels.com/es-es/){:target="_blank" rel="noopener noreferrer"} y [Unsplash](https://unsplash.com/){:target="_blank" rel="noopener noreferrer"}
+- Botón *back-to-top*: [vanilla-back-to-top](https://github.com/vfeskov/vanilla-back-to-top){:target="_blank" rel="noopener noreferrer"} de [Vlad Feskov](https://github.com/vfeskov){:target="_blank" rel="noopener noreferrer"}
+- Hosting: [Githubpages](https://pages.github.com/){:target="_blank" rel="noopener noreferrer"}
+- Caja de comentarios: [Cusdis](https://cusdis.com/){:target="_blank" rel="noopener noreferrer"} de [Randy](https://github.com/djyde){:target="_blank" rel="noopener noreferrer"}
 
 <br>
 

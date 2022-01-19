@@ -26,12 +26,12 @@ La _ISS_ (International Space Station) por sus siglas en inglés es el objeto en
 
 La _ISS_ orbita la Tierra a alrededor de 400 km de altura a una velocidad aproximada de 27,600 km/h, es decir, la estación viaja a 7 kilómetros por segundo. Esto quiere decir que la estación le da una vuelta entera a la Tierra cada 90 minutos, así es, los astronautas que se encuentran en la estación ven un amanecer cada 45 minutos y un atardecer en el mismo tiempo.
 
-El programa en el que trabajé establece una conexión con una _API_ (Aplication Programming Interface), las cuales nos permiten obtener información de plataformas de acceso público por medio de consultas a los servidores que soportan dichas plataformas. En este caso la _API_ que utilicé es [Open Notify](http://open-notify.org/Open-Notify-API/){:target="_blank"} creada por Nathan Bergey.
+El programa en el que trabajé establece una conexión con una _API_ (Aplication Programming Interface), las cuales nos permiten obtener información de plataformas de acceso público por medio de consultas a los servidores que soportan dichas plataformas. En este caso la _API_ que utilicé es [Open Notify](http://open-notify.org/Open-Notify-API/){:target="_blank" rel="noopener noreferrer"} creada por Nathan Bergey.
 
 <br>
 
 ## Corriendo el programa
-El programa completo se encuentra [aquí](https://github.com/JCBucio/ISS-Tracker){:target="_blank"} en mi perfil de Github, cualquiera lo puede descargar y modificarlo a su gusto, lo único que se requiere es tener Python instalado junto con algunas librerías. Para correr el programa sólo se da el siguiente comando a la terminal:
+El programa completo se encuentra [aquí](https://github.com/JCBucio/ISS-Tracker){:target="_blank" rel="noopener noreferrer"} en mi perfil de Github, cualquiera lo puede descargar y modificarlo a su gusto, lo único que se requiere es tener Python instalado junto con algunas librerías. Para correr el programa sólo se da el siguiente comando a la terminal:
 
 ```
 python iss-tracker.py
@@ -62,7 +62,7 @@ Como se puede observar, el programa nos está indicando el número total de pers
 
 En este ejemplo podemos ver que hay 7 astronautas en la _ISS_, también es notable que hay 3 astronautas en la estación _Tiangong_, estación espacial lanzada al espacio hace unos pocos días por la _CNSA_ (Chinese National Space Administration). Como un dato extra tenemos las coordenadas de la posición exacta de la _ISS_ al momento de correr el programa.
 
-Para hacer el programa más estético visualmente añadí un mapa proyectado con la librería [Dash](https://dash.plotly.com/){:target="_blank"}, cuando corremos el programa también recibiremos una advertencia de que se está utilizando un puerto de tu computador para proyectar el mapa de la ubicación de la *ISS*, ésto es lo que se imprimirá en pantalla:
+Para hacer el programa más estético visualmente añadí un mapa proyectado con la librería [Dash](https://dash.plotly.com/){:target="_blank" rel="noopener noreferrer"}, cuando corremos el programa también recibiremos una advertencia de que se está utilizando un puerto de tu computador para proyectar el mapa de la ubicación de la *ISS*, ésto es lo que se imprimirá en pantalla:
 
 ```
 Dash is running on http://127.0.0.1:8050/

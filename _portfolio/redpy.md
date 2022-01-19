@@ -9,9 +9,9 @@ permalink: /portafolio/REDPy
 ---
 ![image]({{ "assets/img/portfolio/redpy-logo.png" | relative_url }})
 
-Este es un trabajo de apoyo a la investigación que consiste en utilizar un software llamado _REDPy_ para procesar datos sísmicos y detectar sismos repetitivos.<!--more--> _REDPy_ fue creado por la [Dra. Alicia J Hotovec-Ellis](https://www.usgs.gov/staff-profiles/alicia-j-hotovec-ellis?qt-staff_profile_science_products=3#qt-staff_profile_science_products){:target="_blank"}, dedicada a la investigación de la Sismología volcánica.
+Este es un trabajo de apoyo a la investigación que consiste en utilizar un software llamado _REDPy_ para procesar datos sísmicos y detectar sismos repetitivos.<!--more--> _REDPy_ fue creado por la [Dra. Alicia J Hotovec-Ellis](https://www.usgs.gov/staff-profiles/alicia-j-hotovec-ellis?qt-staff_profile_science_products=3#qt-staff_profile_science_products){:target="_blank" rel="noopener noreferrer"}, dedicada a la investigación de la Sismología volcánica.
 
-Este trabajo lo estuve realizando con el [Dr. Luis Antonio Domínguez](https://scholar.google.com.mx/citations?user=9mUpMwwAAAAJ&hl=en){:target="_blank"}, que se dedica a estudiar la propagación de ondas sísmicas en medios hetererogéneos, análisis de tasas de desplazamiento en zonas de subducción, y sistemas de alerta temprana.
+Este trabajo lo estuve realizando con el [Dr. Luis Antonio Domínguez](https://scholar.google.com.mx/citations?user=9mUpMwwAAAAJ&hl=en){:target="_blank" rel="noopener noreferrer"}, que se dedica a estudiar la propagación de ondas sísmicas en medios hetererogéneos, análisis de tasas de desplazamiento en zonas de subducción, y sistemas de alerta temprana.
 
 <br>
 
@@ -33,7 +33,7 @@ Debido a que los sismos de este tipo son de bajas magnitudes es complicado detec
 
 _REDPy_ es un programa relativamente sencillo (ya que no cuenta con una interfaz gráfica) para detectar sismos repetitivos. Los parámetros utilizados en el programa son de bastante utilidad ya que examinan de manera cuidadosa cada sismograma y mediante un algoritmo llamado _STA / LTA_ (Short Time Average over Long Time Average) determinan si los eventos son sismos o ruido.
 
-El programa también cuenta con la flexibilidad de ajustar los parámetros de acuerdo a nuestras necesidades, esto nos permite realizar detecciones más precisas implementando parámetros más estrictos. _REDPy_ da como output mucha información importante, dentro de los archivos más importantes que el programa nos devuelve se encuentran archivos `html` en los que se grafican los datos procesados con una librería de Python llamada [Bokeh](https://bokeh.org/){:target="_blank"}.
+El programa también cuenta con la flexibilidad de ajustar los parámetros de acuerdo a nuestras necesidades, esto nos permite realizar detecciones más precisas implementando parámetros más estrictos. _REDPy_ da como output mucha información importante, dentro de los archivos más importantes que el programa nos devuelve se encuentran archivos `html` en los que se grafican los datos procesados con una librería de Python llamada [Bokeh](https://bokeh.org/){:target="_blank" rel="noopener noreferrer"}.
 
 {% include aligner.html
   images="portfolio/bokeh.png,portfolio/cluster.png"
@@ -48,7 +48,7 @@ El objetivo de aprender y experimentar con este programa así como entender sus 
 
 Otra gran aplicación de este programa se está dando en los eventos sísmicos en volcanes, producidos principalmente por el movimento del magma debajo de la superficie, lo cual nos sugiere que la detección de dichos eventos nos podría ayudar a sondear aumentos de actividad volcánica en zonas con posible actividad volcánica.
 
-[Aquí](https://github.com/ahotovec/REDPy){:target="_blank"} podrás encontrar el código fuente de *REDPy*, así como instrucciones para instalarlo y comenzar a utilizarlo.
+[Aquí](https://github.com/ahotovec/REDPy){:target="_blank" rel="noopener noreferrer"} podrás encontrar el código fuente de *REDPy*, así como instrucciones para instalarlo y comenzar a utilizarlo.
 
 <br>
 

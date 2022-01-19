@@ -12,7 +12,7 @@ En este *meta-post* quiero explicar de manera general cómo fue que creé mi sit
 
 <!--more-->
 
-[Jekyll](https://jekyllrb.com/){:target="_blank"} es un generador de sitios web estáticos, los sitios web estáticos son aquellos que suelen tener una estructura simple, no requieren de una conexión a una base de datos y siempre muestran el mismo contenido a todos los usuarios, por lo tanto dichos sitios son más rápidos. Los sitios web estáticos son ideales para crear blogs, sitios de presentación personal o de documentación.
+[Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"} es un generador de sitios web estáticos, los sitios web estáticos son aquellos que suelen tener una estructura simple, no requieren de una conexión a una base de datos y siempre muestran el mismo contenido a todos los usuarios, por lo tanto dichos sitios son más rápidos. Los sitios web estáticos son ideales para crear blogs, sitios de presentación personal o de documentación.
 
 {% include aligner.html images="posts-img/jekyll-logo.png" %}
 
@@ -22,13 +22,13 @@ En este *meta-post* quiero explicar de manera general cómo fue que creé mi sit
 Crear un sitio web estático con Jekyll requiere de habilidades y conocimientos muy fáciles de obtener por medio de tutoriales o cursos online, algunos de estos conocimientos se muestran a continuación:
 - Tener conocimientos básicos de la terminal del sistema (cmd)
 - Nociones en la estructura de HTML y CSS
-- Entender las funciones de las [RubyGems](https://rubygems.org/){:target="_blank"}
-- *Opcional:* Manejo de repositorios de [Github](https://github.com/){:target="_blank"}
+- Entender las funciones de las [RubyGems](https://rubygems.org/){:target="_blank" rel="noopener noreferrer"}
+- *Opcional:* Manejo de repositorios de [Github](https://github.com/){:target="_blank" rel="noopener noreferrer"}
 
 También se requieren recursos como:
-- Un editor de texto de tu preferencia (yo utilizo [VScode](https://code.visualstudio.com/){:target="_blank"})
-- Descargar e instalar [Ruby](https://www.ruby-lang.org/es/){:target="_blank"} en tu ordenador
-- *Opcional:* Crear una cuenta en [Github](https://github.com/){:target="_blank"}
+- Un editor de texto de tu preferencia (yo utilizo [VScode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"})
+- Descargar e instalar [Ruby](https://www.ruby-lang.org/es/){:target="_blank" rel="noopener noreferrer"} en tu ordenador
+- *Opcional:* Crear una cuenta en [Github](https://github.com/){:target="_blank" rel="noopener noreferrer"}
 
 **Importante:** *Esta documentación está pensada en Windows 10, sin embargo, no difiere mucho de sistemas macOS o Linux.*
 
@@ -36,7 +36,7 @@ También se requieren recursos como:
 
 ## Instalando Jekyll
 Lo primero que debemos hacer es instalar Jekyll en nuestro ordenador (aquí estoy asumiendo que ya tienes Ruby instalado):
-- [_Tutorial de instalación de Ruby en Windows y Mac._](https://youtu.be/LfP7Y9Ja6Qc){:target="_blank"}
+- [_Tutorial de instalación de Ruby en Windows y Mac._](https://youtu.be/LfP7Y9Ja6Qc){:target="_blank" rel="noopener noreferrer"}
 
 \>> Abrimos una terminal, puedes dar clic en "Buscar" y teclear cmd (también se suele llamar "Símbolo del sistema"):
 
@@ -85,16 +85,16 @@ Ahora puedes visualizar todos los cambios que hagas en tu sitio, solamente modif
 <br>
 
 ## Añadir contenido y personalizar
-De aquí en adelante el diseño de tu sitio y su contenido depende de ti, puedes agregar y quitar el contenido que quieras, incluso puedes buscar más temas gratuitos de tu preferencia en [Jekyll Themes](https://jekyllthemes.io/free){:target="_blank"}, cada tema contiene sus instrucciones de uso y algunos ejemplos para que puedas darte una idea de cómo se ve el sitio web. El tema en el que me basé para crear mi sitio se llama [Type-on-Strap](https://github.com/sylhare/Type-on-Strap){:target="_blank"}.
+De aquí en adelante el diseño de tu sitio y su contenido depende de ti, puedes agregar y quitar el contenido que quieras, incluso puedes buscar más temas gratuitos de tu preferencia en [Jekyll Themes](https://jekyllthemes.io/free){:target="_blank" rel="noopener noreferrer"}, cada tema contiene sus instrucciones de uso y algunos ejemplos para que puedas darte una idea de cómo se ve el sitio web. El tema en el que me basé para crear mi sitio se llama [Type-on-Strap](https://github.com/sylhare/Type-on-Strap){:target="_blank" rel="noopener noreferrer"}.
 
 <br>
 
 ## Hosting
-Elegir el hosting para tu sitio web es tu decisión, existen muchos servicios de hosting tanto gratuitos como de paga que ofrecen distintas herramientas para que puedas manejar tu página de una manera más sencilla. Yo elegí [Github Pages](https://pages.github.com/){:target="_blank"} ya que es gratuito, seguro y fácil de editar tratándose de páginas como la que estás viendo, lo único que necesitas es una cuenta de Github y seguir las instrucciones para poner tu sitio en línea.
+Elegir el hosting para tu sitio web es tu decisión, existen muchos servicios de hosting tanto gratuitos como de paga que ofrecen distintas herramientas para que puedas manejar tu página de una manera más sencilla. Yo elegí [Github Pages](https://pages.github.com/){:target="_blank" rel="noopener noreferrer"} ya que es gratuito, seguro y fácil de editar tratándose de páginas como la que estás viendo, lo único que necesitas es una cuenta de Github y seguir las instrucciones para poner tu sitio en línea.
 
 {% include aligner.html images="posts-img/githubpages.jpg" column=1 %}
 
-También puedes ver el código fuente de mi página en [mi perfil de Github](https://github.com/JCBucio){:target="_blank"}, está abierto al público y puede ser reutilizado por cualquiera. Para hacer este sitio me inspiré en la página web del [Dr. Christopher Lovell](https://www.christopherlovell.co.uk/){:target="_blank"}, dale un vistazo! Tiene muy buen contenido.
+También puedes ver el código fuente de mi página en [mi perfil de Github](https://github.com/JCBucio){:target="_blank" rel="noopener noreferrer"}, está abierto al público y puede ser reutilizado por cualquiera. Para hacer este sitio me inspiré en la página web del [Dr. Christopher Lovell](https://www.christopherlovell.co.uk/){:target="_blank" rel="noopener noreferrer"}, dale un vistazo! Tiene muy buen contenido.
 
 En mi [portafolio](/portafolio/Mi-sitio-web) escribí acerca de mi experiencia realizando este proyecto, también añadí recursos útiles para sacarle todo el provecho a Jekyll, así como las fuentes que utilicé para crear el sitio.
 

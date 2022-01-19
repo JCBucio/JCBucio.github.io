@@ -18,8 +18,8 @@ Cuando tenemos datos sísmicos de gran importancia que queremos procesar, o señ
 
 ## Formatos de datos
 Existen muchos formatos en los que se pueden almacenar datos sísmicos pero hay algunos que suelen ser los más comunes, éstos son algunos de ellos:
-- **SAC (Seismic Analysis Code)**: Este es uno de los programas y formatos más utilizados en la comunidad científica que se dedica a la Sismología, es _open source_ y puede ser descargado desde la página de [IRIS (Incorporated Research Institutions for Seismology)](http://ds.iris.edu/ds/nodes/dmc/forms/sac/){:target="_blank"}.
-- **SEED (Standard for the Exchange of Earthquake Data)**: SEED es otro de los formatos más comunes para datos sísmicos, también es _open source_ y se puede descargar desde [IRIS](https://ds.iris.edu/ds/nodes/dmc/data/formats/seed/){:target="_blank"}.
+- **SAC (Seismic Analysis Code)**: Este es uno de los programas y formatos más utilizados en la comunidad científica que se dedica a la Sismología, es _open source_ y puede ser descargado desde la página de [IRIS (Incorporated Research Institutions for Seismology)](http://ds.iris.edu/ds/nodes/dmc/forms/sac/){:target="_blank" rel="noopener noreferrer"}.
+- **SEED (Standard for the Exchange of Earthquake Data)**: SEED es otro de los formatos más comunes para datos sísmicos, también es _open source_ y se puede descargar desde [IRIS](https://ds.iris.edu/ds/nodes/dmc/data/formats/seed/){:target="_blank" rel="noopener noreferrer"}.
 - **SEG (Society of Exploration Geophysics)**: Menos común pero utilizado ampliamente en la industria petrolera y en algunos equipos de exploración geofísica.
 
 Obspy es capaz de leer todos estos formatos y de igual forma editarlos.
@@ -148,9 +148,9 @@ Donde $$V_{s}$$ es la velocidad de la onda S, $$\mu$$ es el Módulo de rigidez y
 ## Fuentes y recursos
 Éstas son algunas fuentes, recursos y referencias que utilicé para crear este post, si te interesa saber más del tema puedes consultarlas, incluso hay algunas `jupyter notebooks` con ejercicios para practicar el uso de Obspy.
 
-- Instalación con distribución Anaconda: [ObsPy: A Python Toolbox for seismology/seismological observatories](https://anaconda.org/conda-forge/obspy){:target="_blank"}
-- Documentación oficial: [Obspy website](https://docs.obspy.org/){:target="_blank"}
-- Ejercicios con jupyter notebooks: [Remote Online Sessions for Emerging Seismologists (ROSES)](https://www.iris.edu/hq/inclass/lesson/704){:target="_blank"}
+- Instalación con distribución Anaconda: [ObsPy: A Python Toolbox for seismology/seismological observatories](https://anaconda.org/conda-forge/obspy){:target="_blank" rel="noopener noreferrer"}
+- Documentación oficial: [Obspy website](https://docs.obspy.org/){:target="_blank" rel="noopener noreferrer"}
+- Ejercicios con jupyter notebooks: [Remote Online Sessions for Emerging Seismologists (ROSES)](https://www.iris.edu/hq/inclass/lesson/704){:target="_blank" rel="noopener noreferrer"}
 
 <br>
 

@@ -63,7 +63,7 @@ Algunos sensores disponibles en el mercado para el análisis híperespectral son
 - **Landsat:** Constelación de satélites con sensores multiespectrales.
 - **World View SWIR:** Satélite comercial de alta resolución espacial.
 - **Micro MCA12:** Cámara multiespectral para aplicaciones forestales y de agricultura de precisión.
-- **AVIRIS:** Sensor híperespectral operado por el _[JPL](https://www.jpl.nasa.gov/){:target="_blank"} (Jet Propulsion Laboratory)_, cubre todo el rango óptico de onda corta (400-2500nm).
+- **AVIRIS:** Sensor híperespectral operado por el _[JPL](https://www.jpl.nasa.gov/){:target="_blank" rel="noopener noreferrer"} (Jet Propulsion Laboratory)_, cubre todo el rango óptico de onda corta (400-2500nm).
 - **Pika NIR:** Cámara híperespectral, su peso de 2.7kg sin _GPS_ ni _IMU_(orientación) representa una limitación para drones pequeños.
 - **OCI-F-SWIR:** Cámara híperespectral, cubre el mismo rango que la Pika NIR a menor costo y peso (820g).
 
@@ -76,7 +76,7 @@ La separabilidad espectral se ve influida por el número de cuerpos que se encue
 <br>
 
 #### Detección mediante modelos no lineales y _machine learning_
-Con el fin de detectar hasta qué punto el modelo lineal representa una limitación en la detección se empleó un modelo de [_machine learning_](https://www.ibm.com/mx-es/analytics/machine-learning){:target="_blank"} llamado [_programación genética_](https://www.researchgate.net/publication/257527398_Programacion_Genetica_Introduccion_y_Aspectos_Generales){:target="_blank"} basada en la teoría de evolución de Darwin. En este método los individuos evolucionan a partir de operaciones genéticas de recombinación, mutación, selección, etc. para conformar otros individuos en una siguiente generación. La probabilidad de que una variable sea transferida a la siguiente generación depende, en este caso, del *índice de Kappa* (índice para evaluar la concordancia en un conjunto de datos).
+Con el fin de detectar hasta qué punto el modelo lineal representa una limitación en la detección se empleó un modelo de [_machine learning_](https://www.ibm.com/mx-es/analytics/machine-learning){:target="_blank" rel="noopener noreferrer"} llamado [_programación genética_](https://www.researchgate.net/publication/257527398_Programacion_Genetica_Introduccion_y_Aspectos_Generales){:target="_blank" rel="noopener noreferrer"} basada en la teoría de evolución de Darwin. En este método los individuos evolucionan a partir de operaciones genéticas de recombinación, mutación, selección, etc. para conformar otros individuos en una siguiente generación. La probabilidad de que una variable sea transferida a la siguiente generación depende, en este caso, del *índice de Kappa* (índice para evaluar la concordancia en un conjunto de datos).
 
 #### Monitoreo térmico
 Existen 2 razones por las que el suelo tiende a calentarse o enfriarse con menor rapidez cuando hay cuerpos enterrados:

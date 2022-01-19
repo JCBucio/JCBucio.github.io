@@ -8,7 +8,7 @@ thumbnail: "assets/img/thumbnails/terminal.jpg"
 feature-img: "assets/img/thumbnails/terminal.jpg"
 ---
 
-[Python](https://www.python.org/){:target="blank"} es un lenguaje de programación muy popular en la actualidad, sus aplicaciones se encuentran en la ciencia de datos, _machine learning_, desarrollo web, _blockchain_, entre otros. En este post explicaré cómo este lenguaje puede ayudarte a automatizar tareas en tu ordenador.
+[Python](https://www.python.org/){:target="blank" rel="noopener noreferrer"} es un lenguaje de programación muy popular en la actualidad, sus aplicaciones se encuentran en la ciencia de datos, _machine learning_, desarrollo web, _blockchain_, entre otros. En este post explicaré cómo este lenguaje puede ayudarte a automatizar tareas en tu ordenador.
 
 <!--more-->
 
@@ -46,7 +46,7 @@ En este script importamos la librería `subprocess` la cual nos servirá para ej
 - `stderr=f`: En el caso de que nuestro comando devuelva un error, el *standard error* se asigna a la variable f para escribirlo en nuestro archivo de texto.
 - `text=True`: Este parámetro decodifica el output para poder ser leído a manera de texto.
 
-En el código de ejemplo se ejecutan 2 comandos, el primero no escribe el *standard output* ni el *standard error* en ningún lugar ya que es un comando que crea archivos para almacenar datos, el segundo comando lo utilizo para procesar datos sísmicos con el programa [REDPy](https://github.com/ahotovec/REDPy){:target="blank"}, este comando toma más tiempo y escribe el output en el archivo de texto `log.txt`.
+En el código de ejemplo se ejecutan 2 comandos, el primero no escribe el *standard output* ni el *standard error* en ningún lugar ya que es un comando que crea archivos para almacenar datos, el segundo comando lo utilizo para procesar datos sísmicos con el programa [REDPy](https://github.com/ahotovec/REDPy){:target="blank" rel="noopener noreferrer"}, este comando toma más tiempo y escribe el output en el archivo de texto `log.txt`.
 
 <br>
 
@@ -191,9 +191,9 @@ plt.savefig("events_per_month.png")
 
 <br>
 
-En este script le di formato a un archivo llamado `dailycounts.csv` que contiene 365 filas y 862 columnas sobre detecciones de sismos repetitivos, claramente sería muy complicado modificar este archivo en un documento de excel, es por eso que la librería [pandas](https://pandas.pydata.org/){:target="blank"} nos ayuda a realizar las estadísticas y el formato de la tabla sin la necesidad de ver los datos en pantalla.
+En este script le di formato a un archivo llamado `dailycounts.csv` que contiene 365 filas y 862 columnas sobre detecciones de sismos repetitivos, claramente sería muy complicado modificar este archivo en un documento de excel, es por eso que la librería [pandas](https://pandas.pydata.org/){:target="blank" rel="noopener noreferrer"} nos ayuda a realizar las estadísticas y el formato de la tabla sin la necesidad de ver los datos en pantalla.
 
-De igual manera [matplotlib](https://matplotlib.org/){:target="blank"} juega un papel importante ya que nos va a ayudar a generar una gráfica personalizada a nuestro gusto para hacer un análisis más visiblemente detallado de los datos, esta es la gráfica que genera el script:
+De igual manera [matplotlib](https://matplotlib.org/){:target="blank" rel="noopener noreferrer"} juega un papel importante ya que nos va a ayudar a generar una gráfica personalizada a nuestro gusto para hacer un análisis más visiblemente detallado de los datos, esta es la gráfica que genera el script:
 
 ![REDPy_graphic]({{ "assets/img/posts-img/events_per_month.png" | relative_url }})
 <figcaption>Número de sismos repetitivos detectados por 3 estaciones sísmicas un año antes del evento conocido como el Mayor Cucapah de magnitud 7.2Mw con epicentro al norte de Baja California, ocurrido el 4 de abril del 2010.</figcaption>
@@ -240,10 +240,10 @@ mail_notify.send(msg)
 ### Más usos y ejemplos
 Debido a que Python es un lenguaje muy flexible y lleno de librerías para procesar todo tipo de información podemos darle el uso a estos scripts para prácticamente cualquier proceso que estemos llevando a cabo en nuestro ordenador. Los scripts detallados arriba pueden ser de bastante utilidad en diferentes áreas de la ciencia de datos que están fuera del alcance de este post, éstos son algunos ejemplos:
 
-- Entrenamiento de _machine learning_: [Your First Machine Learning Project in Python](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/){:target="blank"}
-- Procesamiento de  _redes neuronales_: [Your First Deep Learning Project in Python](https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/){:target="blank"}
-- Reconocimiento de imágenes con _computer vision_: [Start Here with Computer Vision, Deep Learning, and OpenCV](https://www.pyimagesearch.com/start-here/){:target="blank"}
-- Análisis de la bolsa de valores y graficación OHLC (_Open, High, Low, Close_): [3 Basic Steps of Stock Market Analysis in Python](https://towardsdatascience.com/3-basic-steps-of-stock-market-analysis-in-python-917787012143){:target="blank"}
+- Entrenamiento de _machine learning_: [Your First Machine Learning Project in Python](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/){:target="blank" rel="noopener noreferrer"}
+- Procesamiento de  _redes neuronales_: [Your First Deep Learning Project in Python](https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/){:target="blank" rel="noopener noreferrer"}
+- Reconocimiento de imágenes con _computer vision_: [Start Here with Computer Vision, Deep Learning, and OpenCV](https://www.pyimagesearch.com/start-here/){:target="blank" rel="noopener noreferrer"}
+- Análisis de la bolsa de valores y graficación OHLC (_Open, High, Low, Close_): [3 Basic Steps of Stock Market Analysis in Python](https://towardsdatascience.com/3-basic-steps-of-stock-market-analysis-in-python-917787012143){:target="blank" rel="noopener noreferrer"}
 
 <br>
 
