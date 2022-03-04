@@ -9,7 +9,7 @@ avatar: https://avatars.githubusercontent.com/u/73540544?v=4     # Empty for no 
 favicon: assets/pick.png                         # Icon displayed in the tab
 
 # Header and footer text
-header_text: Bienvenido a mi sitio web  # Change Blog header text
+header_text: Data scientist | Geoscientist  # Change Blog header text
 header_feature_image: assets/img/feature-img/earth.jpg
 footer_text: >
   <i>Copyright © 2022 Juan Carlos Bucio T.</i>
