@@ -8,7 +8,7 @@ thumbnail: "assets/img/thumbnails/terminal.jpg"
 feature-img: "assets/img/thumbnails/terminal.jpg"
 ---
 
-[Python](https://www.python.org/){:target="blank" rel="noopener noreferrer"} es un lenguaje de programación muy popular en la actualidad, sus aplicaciones se encuentran en la ciencia de datos, _machine learning_, desarrollo web, _blockchain_, entre otros. En este post explicaré cómo este lenguaje puede ayudarte a automatizar tareas en tu ordenador.
+[Python](https://www.python.org/){:target="blank" rel="noopener noreferrer"} es un lenguaje de programación muy popular en la actualidad, sus aplicaciones se encuentran en la ciencia de datos, _machine learning_, desarrollo web, _blockchain_, entre otros. En este post veremos cómo este lenguaje puede ayudarte a automatizar tareas en tu ordenador.
 
 <!--more-->
 
@@ -81,7 +81,7 @@ def message(subject="Python Notification", text="", img=None, attachment=None):
     if img is not None:
         # Si tenemos una entrada accesamos a ella y revisamos que sea una lista
         if type(img) is not list:
-            img = [img] # Si no es una lista la volvemos una
+            img = [img] # Si no es una lista la convertimos en una
         
         # Ahora nos movemos a través de la lista
         for one_img in img:
@@ -116,6 +116,7 @@ def message(subject="Python Notification", text="", img=None, attachment=None):
 3.- Ahora generamos la función que va a enviar nuestro correo por medio de un servidor `SMTP`:
 
 ```python
+# Si queremos utilizar gmail, asignamos el servidor SMTP de gmail
 def send(msg, server='smtp.gmail.com', port='587'):
     # Se intenta el siguiente código dentro de un bloque try-except en caso de una falla en la red
     try:
@@ -141,6 +142,7 @@ def send(msg, server='smtp.gmail.com', port='587'):
         smtp.sendmail(email, email, msg.as_string())
         # Se cierra la sesión
         smtp.quit()
+    # En caso de que se produzca una falla en la red, se imprime un mensaje de error
     except socket.gaierror:
         print("\n Network connection error, mail not sent. \n") 
 ```
@@ -149,7 +151,7 @@ def send(msg, server='smtp.gmail.com', port='587'):
 <br>
 
 ### Crear una gráfica con los datos procesados y enviarla por email
-Muchas veces queremos que nuestros datos se vean reflejados en gráficas que nos permitan interpretarlos de una manera más rápida y sencilla. En este ejemplo utilizo _matplotlib_ y _pandas_ para darle formato a mis datos y graficarlos de manera que pueda realizar interpretaciones más precisas:
+Muchas veces queremos que nuestros datos se vean reflejados en gráficas que nos permitan interpretarlos de una manera más rápida y sencilla. En este ejemplo se utiliza _matplotlib_ y _pandas_ para darle formato a los datos y graficarlos de manera que se puedan realizar interpretaciones más precisas:
 
 ```python
 import pandas as pd
@@ -191,7 +193,7 @@ plt.savefig("events_per_month.png")
 
 <br>
 
-En este script le di formato a un archivo llamado `dailycounts.csv` que contiene 365 filas y 862 columnas sobre detecciones de sismos repetitivos, claramente sería muy complicado modificar este archivo en un documento de excel, es por eso que la librería [pandas](https://pandas.pydata.org/){:target="blank" rel="noopener noreferrer"} nos ayuda a realizar las estadísticas y el formato de la tabla sin la necesidad de ver los datos en pantalla.
+En este script se le dió formato a un archivo llamado `dailycounts.csv` que contiene 365 filas y 862 columnas sobre detecciones de sismos repetitivos, claramente sería muy complicado modificar este archivo en un documento de excel, es por eso que la librería [pandas](https://pandas.pydata.org/){:target="blank" rel="noopener noreferrer"} nos ayuda a realizar las estadísticas y el formato de la tabla sin la necesidad de ver los datos en pantalla.
 
 De igual manera [matplotlib](https://matplotlib.org/){:target="blank" rel="noopener noreferrer"} juega un papel importante ya que nos va a ayudar a generar una gráfica personalizada a nuestro gusto para hacer un análisis más visiblemente detallado de los datos, esta es la gráfica que genera el script:
 

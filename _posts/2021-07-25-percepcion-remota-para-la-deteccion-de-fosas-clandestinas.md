@@ -85,7 +85,7 @@ Existen 2 razones por las que el suelo tiende a calentarse o enfriarse con menor
 - Tras la descompsición se quedan espacios vacíos que actúan como aislante térmico de tal forma que dichas áreas se calientan más despacio que el suelo alrededor.
 
 ![sensors]({{ "assets/img/posts-img/termic_graphs.png" | relative_url }})
-<figcaption style="text-align: left;"> Análisis diferencial termográfico para tomas con un mes de diferencia con respectivo acercamiento (derecha) para el área de interés. El rectángulo rojo indica el áera de interés. </figcaption>
+<figcaption style="text-align: left;"> Análisis diferencial termográfico para tomas con un mes de diferencia con respectivo acercamiento (derecha) para el área de interés. El rectángulo rojo indica el área de interés. </figcaption>
 
 <br>
 
