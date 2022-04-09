@@ -17,3 +17,11 @@
 - authors: B. Rothrock, J. Papon, R. Kennedy, M. Ono, M. Heverly, C. Cunningham. Jet Propulsion Laboratory, California Institute of Technology. Robotics Institute, Carnegie Mellon University.
   title: "[SPOC: Deep Learning-based Terrain Classification for Mars Rover Missions. 2016.](https://arc.aiaa.org/doi/abs/10.2514/6.2016-5539)"
   key: spoc_mars
+
+- authors: Alken, P., Thébault, E., Beggan, C.D. et al.
+  title: "[International Geomagnetic Reference Field: the thirteenth generation](https://doi.org/10.1186/s40623-020-01288-x)"
+  key: igrf-13
+
+- authors: H. Hernández.
+  title: "Estudio Magnetométrico en Tláhuac de la Subcuenca de Chalco, Zona Concurbada México D.F."
+  key: magfield
