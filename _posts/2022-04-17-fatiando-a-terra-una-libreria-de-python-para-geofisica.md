@@ -228,7 +228,7 @@ longitud, latitud_sph, radio = elipsoide.geodetic_to_spherical(
 <br>
 
 ### Harmonica. Procesado, modelado directo e inverso de datos gravimétricos y magnéticos [^4]
-[Harmonica](https://www.fatiando.org/harmonica/latest/){:target="_blank" rel="noopener noreferrer"} fue creada con la intención de ser el nuevo hogar de aquellas implementaciones de métodos de procesamiento y modelado de datos gravimétricos y magnéticos. Además, surgió como oportunidad de rediseñar algunas de esta implementaciones con el objetivo de facilitar su utilización, extensibilidad y mantenimiento a futuro.
+[Harmonica](https://www.fatiando.org/harmonica/latest/){:target="_blank" rel="noopener noreferrer"} fue creada con la intención de ser el nuevo hogar de aquellas implementaciones de métodos de procesamiento y modelado de datos gravimétricos y magnéticos. Además, surgió como oportunidad de rediseñar algunas de estas implementaciones con el objetivo de facilitar su utilización, extensibilidad y mantenimiento a futuro.
 
 <br>
 
@@ -339,7 +339,7 @@ plt.show()
 <br>
 
 ### Pooch. Descarga y almacenamiento de datos científicos de la web de forma sencilla [^5]
-Muchas de las librerías de software científico hacen uso de datos de muestra para ejemplificar su funcionamiento en las secciones de la documentación que se conocen como *Galería de ejemplos*. Usualmente estos datos de muestra se incluyen dentro de los repositorios donde se aloja el mismo código fuente de la librería, sin embargo, estos archivos de datos no son empaquetados para su distribución con el objetivo de reducir el tamaño de futuras instalaciones. En cambio, los datos de muestra suelen ser descargados al ser necesarios mediante código implementado dentro de cada una de estas librerías, haciendo uso de paquetes de Python para descargar archivos mediante el protocolo *HTTP* por ejemplo.
+Muchas de las librerías de software científico hacen uso de datos de muestra para ejemplificar su funcionamiento en las secciones de la documentación que se conocen como *Galería de ejemplos*. Usualmente estos datos de muestra se incluyen dentro de los repositorios donde se aloja el mismo código fuente de la librería, sin embargo, estos archivos de datos no son empaquetados para su distribución, esto con el objetivo de reducir el tamaño de futuras instalaciones. En cambio, los datos de muestra suelen ser descargados al ser necesarios mediante código implementado dentro de cada una de estas librerías, haciendo uso de paquetes de Python para descargar archivos mediante el protocolo *HTTP* por ejemplo.
 
 <br>
 
@@ -393,7 +393,7 @@ También se determinaron la profundidad relativa de las fuentes y el parámetro 
 
 <br>
 
-Una característica importante en la efectividad de este procesamiento es que fue posible estimar los coeficientes de las fuentes utilizando el conjunto completo de datos (1.7 millones de puntos) para predcir valores del disturbio de la gravedad sobre una grilla regular de 2442x2085 puntos a una altitud de 2127.58 m por encima del elipsoide. En una computadora con 16 núcleos y 16 Gb de RAM, la estimación de los coeficientes de las 796,744 fuentes mediante el algoritmo de potenciación del gradiente tomó aproximadamente 1.3 horas, y la predicción sobre los puntos de la grilla, 18 minutos.
+Una característica importante en la efectividad de este procesamiento es que fue posible estimar los coeficientes de las fuentes utilizando el conjunto completo de datos (1.7 millones de puntos) para predecir valores del disturbio de la gravedad sobre una grilla regular de 2442x2085 puntos a una altitud de 2127.58 m por encima del elipsoide. En una computadora con 16 núcleos y 16 Gb de RAM, la estimación de los coeficientes de las 796,744 fuentes mediante el algoritmo de potenciación del gradiente tomó aproximadamente 1.3 horas, y la predicción sobre los puntos de la grilla, 18 minutos.
 
 Esto representa un enorme avance en la capacidad de cómputo, estamos hablando que sería posible procesar datos de ciudades enteras desde un ordenador personal o laptop con especificaciones modestas. No hay duda de que estos métodos y paquetes de descarga, procesamiento, modelado e interpolado de datos representan una gran ventaja para acercar la ciencia a la mayor cantidad posible de personas interesadas en estas técnicas, lo cual reduce cada vez más la barrera del conocimiento.
 
