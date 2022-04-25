@@ -18,9 +18,9 @@ Este proyecto lo desarrollé para mi materia de Magnetometría, donde trabajamos
 ## ¿Qué es el Campo Magnético Terrestre?
 El Campo Magnético Terrestre (_CMT_) o Campo Geomagnético es un gran magneto con dirección norte-sur coincidente con el eje de rotación de la Tierra[^1]. Las líneas de campo que se generan por este magneto salen por el polo norte magnético y convergen en el polo sur magnético. De acuerdo a _Muniz (1997)_, el Campo Magnético Terrestre se integra por cuatro fuentes principales:
 
-- **El campo principal**: Generado por el núcleo externo líquido de la Tierra ubicado a unos 2,900 km de produndidad aproximadamente y compuesto principalmente por Hierro y Níquel. Se cree que las corrientes de convección de este material conductor en el núcleo actúan como un gran dínamo generando aproximadamente 90% del campo total.
+- **El campo principal**: Generado por el núcleo externo líquido de la Tierra ubicado a unos 2,900 km de profundidad aproximadamente y compuesto principalmente por Hierro (Fe) y Níquel (Ni). Se cree que las corrientes de convección de este material conductor en el núcleo actúan como un gran dínamo generando aproximadamente 90% del campo total.
 
-- **El campo cortical**: Generado por la magnetización de las rocas en la corteza terrestre en donde las temperaturas son menores a la _temperatura de Curie_, los minerales en esta zona son muy ricos en Fe. Este campo es el más estable, presenta variaciones en periodos de cientos de miles de años.
+- **El campo cortical**: Generado por la magnetización de las rocas en la corteza terrestre en donde las temperaturas son menores a la [_temperatura de Curie_](https://analyzing-testing.netzsch.com/es/training-know-how/glosario/temperatura-de-curie){:target="_blank" rel="noopener noreferrer"}, los minerales en esta zona son muy ricos en Hierro (Fe). Este campo es el más estable, presenta variaciones en periodos de cientos de miles de años.
 
 - **El campo externo**: Su origen está en la interacción del viento solar con la capa magnética que envuelve la Tierra (Magnetósfera). A su vez, esta interacción se proyecta hasta la Ionósfera generando variaciones diurnas que dependen de periodos de perturbación, tormentas solares o magnetopulsaciones.
 
@@ -66,12 +66,12 @@ El procedimiento que sigue _MagnetoPy_ para procesar los datos consta de recibir
 
 El nombre de cada columna puede ser cualquiera ya que el programa nos permite declarar las columnas que usaremos en cada archivo, los nombres declarados arriba son una recomendación.
 
-Aquí puedes descargar _MagnetoPy_ para comenzar a utilizarlo:
+Aquí puedes descargar _MagnetoPy_ para comenzar a utilizarlo, también se detallan instrucciones para crear un ambiente virtual y ejecutar el programa:
 - [https://github.com/JCBucio/MagnetoPy](https://github.com/JCBucio/MagnetoPy){:target="_blank" rel="noopener noreferrer"}
 
 Con el siguiente comando corremos nuestro programa:
-```bash
->> python3 magnetopy.py stationsfile.csv basefile.csv output.csv
+```
+>> python magnetopy.py stationsfile.csv basefile.csv output.csv
 ```
 
 Una vez que se le ha dado toda la información necesaria a _MagnetoPy_ para procesar los datos el programa realiza un _matching_ de los horarios más cercanos de mediciones en estaciones base con mediciones en estaciones móviles, asigna el valor de campo magnético a la última y calcula la variación diurna para esa medición. Veremos lo siguiente en nuestra terminal:
@@ -149,7 +149,38 @@ Finalmente el programa nos da como output un archivo `csv` con el nombre que pre
 
 - **diff_time**: Diferencia de tiempo entre la medición de la estación móvil y la medición de la estación base.
 - **diurnal_var**: Variación diurna de la intensidad de campo magnético para cada medición.
+- **diurnal_var_corr**: Corrección por variación diurna.
 - **igrf_intensity**: Intensidad total del campo magnético para cada medición proveniente del _IGRF-13_.
+- **igrf_var**: Variación de la intensidad total del campo magnético proveniente del _IGRF-13_.
+- **igrf_var_corr**: Corrección tomando en cuenta la variación de la intensidad total del campo magnético proveniente del _IGRF-13_.
+
+<br>
+
+## Convertir archivos GPX a CSV
+Es bastante común que si no contamos con un _GPS_ al hacer nuestros levantamientos en campo tengamos que recurrir a ubicar nuestras estaciones móviles por medio de softwares como Google Earth o _SIGs_ (Sistemas de Información Geográfica) que suelen devolvernos los archivos de nuestra planeación de campo en formato _GPX_, el cual contiene las coordenadas y los números de cada una de nuestras estaciones y perfiles. Sin embargo, cuando realizamos perfiles muy extensos es tedioso buscar nuestra estación y cotejarla con la lectura de nuestro instrumento por medio de los softwares anteriormente mencionados, para resolver este problema añadí un pequeño programa llamado `gpx_converter.py` que puedes encontrar en el repositorio de _MagnetoPy_. Para utilizar este convertidor de archivos gpx a csv solo necesitamos instalar el paquete [gpxpy](https://github.com/tkrajina/gpxpy){:target="_blank" rel="noopener noreferrer"} dentro de nuestro ambiente virtual de la siguiente manera:
+
+```
+>> conda install -c conda-forge gpxpy
+```
+
+Una vez que tenemos el paquete instalado podemos convertir cualquier archivo gpx a csv con el siguiente comando:
+
+```
+>> python gpx_converter.py file.gpx output_file.csv
+```
+
+Veremos un output como el siguiente:
+
+```
+Data saved in: output_file.csv
+```
+
+Las columnas que podremos ver en nuestro archivo csv son las siguientes:
+
+- **route**: Número de nuestra ruta, esto es en el caso de que nuestra planeación de estaciones tenga múltiples líneas de perfiles.
+- **station**: Número de nuestra estación en el perfil (ruta) correspondiente.
+- **latitude**: Latitud en coordenadas geográficas.
+- **longitude**: Longitud en coordenadas geográficas.
 
 <br>
 
