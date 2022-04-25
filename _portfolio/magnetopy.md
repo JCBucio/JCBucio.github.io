@@ -150,9 +150,8 @@ Finalmente el programa nos da como output un archivo `csv` con el nombre que pre
 - **diff_time**: Diferencia de tiempo entre la medición de la estación móvil y la medición de la estación base.
 - **diurnal_var**: Variación diurna de la intensidad de campo magnético para cada medición.
 - **diurnal_var_corr**: Corrección por variación diurna.
-- **igrf_intensity**: Intensidad total del campo magnético para cada medición proveniente del _IGRF-13_.
-- **igrf_var**: Variación de la intensidad total del campo magnético proveniente del _IGRF-13_.
-- **igrf_var_corr**: Corrección tomando en cuenta la variación de la intensidad total del campo magnético proveniente del _IGRF-13_.
+- **igrf_intensity**: Intensidad total del campo magnético para cada medición proveniente del _IGRF_.
+- **igrf_res_field**: Campo magnético residual calculado a partir de la intensidad total del campo magnético obtenida del _IGRF_.
 
 <br>
 
