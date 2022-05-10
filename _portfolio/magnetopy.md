@@ -148,6 +148,7 @@ Total time spent: 2.480 minutes
 Finalmente el programa nos da como output un archivo `csv` con el nombre que previamente asignamos, además de las columnas en nuestros dos archivos procesados también veremos los siguientes datos:
 
 - **diff_time**: Diferencia de tiempo entre la medición de la estación móvil y la medición de la estación base.
+- **base_magfield_mean**: Promedio en un día del campo magnético de las estaciones base.
 - **diurnal_var**: Variación diurna de la intensidad de campo magnético para cada medición.
 - **diurnal_var_corr**: Corrección por variación diurna.
 - **igrf_intensity**: Intensidad total del campo magnético para cada medición proveniente del _IGRF_.
