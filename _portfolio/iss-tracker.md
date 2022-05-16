@@ -9,12 +9,12 @@ permalink: /portafolio/ISS-Tracker
 ---
 ![image]({{ "assets/img/portfolio/nasa-iss.jpg" | relative_url }})
 
-Mini proyecto personal que consiste en un programa que establece una conexión con una _API_ (Aplication Programming Interface) la cual rastrea y nos da la posición exacta de la _ISS_ en tiempo real, así como los astronautas que se encuentran en el espacio.<!--more--> Este pequeño programa puede ser mejorado constantemente para que nos proporcione más datos de manera más estética por medio de una interfaz de usuario.
+Mini proyecto personal que consiste en un programa que establece una conexión con una _API_ (Aplication Programming Interface) la cual rastrea y nos da la posición exacta de la _ISS_ en tiempo real, así como los astronautas que se encuentran en el espacio.<!--more--> Este pequeño programa cuenta con una interfaz sencilla hecha con **HTML** y **JavaScript** para visualizar en un mapa el movimiento de la _ISS_.
 
 <br>
 
 ## ¿Qué es la ISS?
-La _ISS_ (International Space Station) por sus siglas en inglés es el objeto en el espacio más grande construido por el ser humano, se trata de un proyecto internacional con agencias espaciales de todo el mundo, el primer módulo de la estación lanzado al espacio fue el módulo ruso _Zarya_ el 20 de noviembre de 1998. Una gran cantidad de módulos fueron enviados al espacio y acoplados en los años siguientes hasta su último módulo acoplado en 2011 con el vuelo final del _Programa del Transbordador Espacial_ en el orbitador _Discovery_.
+La _ISS_ (International Space Station) por sus siglas en inglés es el objeto en el espacio más grande construido por el ser humano, se trata de un proyecto internacional con agencias espaciales de todo el mundo, el primer módulo de la estación lanzado al espacio fue el módulo ruso _Zarya_ el 20 de noviembre de 1998. Una gran cantidad de módulos fueron enviados al espacio y acoplados en los años siguientes hasta su último módulo acoplado en 2011 con el vuelo final del _Programa del Transbordador Espacial_ en el orbitador _Discovery_. Desde entonces se han hecho pequeñas modificaciones para mantener la estación en uso continuo.
 
 {% include aligner.html
   images="portfolio/proton.jpg,portfolio/discovery.jpg"
@@ -26,68 +26,37 @@ La _ISS_ (International Space Station) por sus siglas en inglés es el objeto en
 
 La _ISS_ orbita la Tierra a alrededor de 400 km de altura a una velocidad aproximada de 27,600 km/h, es decir, la estación viaja a 7 kilómetros por segundo. Esto quiere decir que la estación le da una vuelta entera a la Tierra cada 90 minutos, así es, los astronautas que se encuentran en la estación ven un amanecer cada 45 minutos y un atardecer en el mismo tiempo.
 
-El programa en el que trabajé establece una conexión con una _API_ (Aplication Programming Interface), las cuales nos permiten obtener información de plataformas de acceso público por medio de consultas a los servidores que soportan dichas plataformas. En este caso la _API_ que utilicé es [Open Notify](http://open-notify.org/Open-Notify-API/){:target="_blank" rel="noopener noreferrer"} creada por Nathan Bergey.
+El programa en el que trabajé establece una conexión con una _API_ (Aplication Programming Interface), la cual nos permite programar consultas de manera automática para obtener información en tiempo real. En este caso la _API_ que utilicé es [Open Notify](http://open-notify.org/Open-Notify-API/){:target="_blank" rel="noopener noreferrer"} creada por Nathan Bergey. Si quieres leer más acerca de las *APIs* te dejo este post en el que se explica de manera detallada su funcionamiento y aplicaciones:
+
+- [Red Hat. ¿Qué es una API?](https://www.redhat.com/es/topics/api/what-are-application-programming-interfaces){:target="_blank" rel="noopener noreferrer"}
 
 <br>
 
-## Corriendo el programa
-El programa completo se encuentra [aquí](https://github.com/JCBucio/ISS-Tracker){:target="_blank" rel="noopener noreferrer"} en mi perfil de Github, cualquiera lo puede descargar y modificarlo a su gusto, lo único que se requiere es tener Python instalado junto con algunas librerías. Para correr el programa sólo se da el siguiente comando a la terminal:
+### Cross-Origin Resource Sharing (CORS)
+Al generar la interfaz visual con **HTML** y **JavaScript** tuve problemas al solicitar los datos de la _API_ debido a un problema muy común llamado **Cross-Origin Resource Sharing** (CORS). Esto sucede cuando una página web solicita datos de otra página web que no es de su propiedad de manera que el navegador no puede acceder a esos datos. Para arreglar este problema desarrollé una _API_ propia que solicita los recursos necesarios y los devuelve en formato `JSON` permitiendo las solicitudes `http` consideradas como _cross-origin_ (fuera de su propiedad).
 
-```
-python iss-tracker.py
-```
+Esta pequeña _API_ está programada con [Flask](https://flask.palletsprojects.com/en/2.1.x/){:target="_blank" rel="noopener noreferrer"}, un framework de *Python* para crear aplicaciones web de manera sencilla y muy minimalista. De esta manera la interfaz de mi programa se conecta directamente a mi *API* y obtiene los datos necesarios para visualizarlos. Aquí puedes obtener más información sobre el manejo de CORS:
 
-Este comando nos dará el siguiente output en la terminal:
-
-```
-##### PEOPLE IN SPACE:  10 #####
-Mark Vande Hei  in  ISS
-Oleg Novitskiy  in  ISS
-Pyotr Dubrov  in  ISS
-Thomas Pesquet  in  ISS
-Megan McArthur  in  ISS
-Shane Kimbrough  in  ISS
-Akihiko Hoshide  in  ISS
-Nie Haisheng  in  Tiangong
-Liu Boming  in  Tiangong
-Tang Hongbo  in  Tiangong
-
-
-##### ACTUAL POSITION #####
-Latitude:  16.5782
-Longitude:  -3.8413
-```
-
-Como se puede observar, el programa nos está indicando el número total de personas en el espacio, independientemente del lugar del espacio en el que se encuentren. Después tenemos enlistados los nombres de los y las astronautas así como el vehículo en el que se encuentran al momento de correr el programa.
-
-En este ejemplo podemos ver que hay 7 astronautas en la _ISS_, también es notable que hay 3 astronautas en la estación _Tiangong_, estación espacial lanzada al espacio hace unos pocos días por la _CNSA_ (Chinese National Space Administration). Como un dato extra tenemos las coordenadas de la posición exacta de la _ISS_ al momento de correr el programa.
-
-Para hacer el programa más estético visualmente añadí un mapa proyectado con la librería [Dash](https://dash.plotly.com/){:target="_blank" rel="noopener noreferrer"}, cuando corremos el programa también recibiremos una advertencia de que se está utilizando un puerto de tu computador para proyectar el mapa de la ubicación de la *ISS*, ésto es lo que se imprimirá en pantalla:
-
-```
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app "iss-tracker" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
-```
-
-Si corres el programa en tu computadora puede ser que el servidor sea distinto.
-
-Para visualizar el mapa debemos copiar y pegar la dirección que nos arroja la terminal en un navegador, en este caso mi dirección es `http://127.0.0.1:8050/`, ahora podremos ver la ubicación de la _ISS_ con mayor precisión:
-
-![iss-tracker]({{ "/assets/img/portfolio/iss-tracker.png" | relative_url }})
-
-El punto azul dentro del mapa es la ubicación de la _ISS_ al momento de correr el programa, si ubicamos el mouse sobre el punto *Dash* nos dará las coordenadas del punto en la Tierra.
+- [MDN Web Docs. Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank" rel="noopener noreferrer"}
 
 <br>
 
-## Mejoras futuras
-Sabemos que la estación viaja a una gran velocidad y por lo tanto cambia de posición de una manera constante, debido a esto quiero hacer que el programa actualice la información cada determinado tiempo para que de esta forma tengamos la posición exacta en tiempo real sin la necesidad de correr el programa de nuevo.
+## ISS Tracker
+Aquí podemos visualizar el movimiento de la _ISS_ en un mapa en tiempo real, así como la cantidad de astronautas en el espacio junto con el vehículo en el que se encuentran actualmente. La razón de que en la información se incluya el vehículo es debido a que en órbita también se encuentra la estación espacial china [Tiangong](https://en.wikipedia.org/wiki/Tiangong_space_station){:target="_blank" rel="noopener noreferrer"}, la cual también suele albergar astronautas, o *taikonautas* de la [Agencia Espacial China](http://www.cnsa.gov.cn/english/){:target="_blank" rel="noopener noreferrer"} (CNSA, por sus siglas en inglés).
 
-Otra implementación que quiero hacer a este programa es graficar la trayectoria de la _ISS_, de esta manera también podría trabajar en una alerta que me indique cuándo pasará cerca de una ubicación dada al programa.
+<iframe title="ISS Javascript Tracker"
+    width='100%' height='800px' scrolling='no' frameborder='0'
+    src="https://jcbucio.github.io/iss-javascript-tracker">
+</iframe>
+
+Es posible que en un futuro cercano también se incluya la información de *cosmonautas* de la Agencia Espacial Federal de Rusia (*Roscosmos*) que sean enviados al espacio a su propia estación espacial que se encuentra todavía en desarrollo.
+
+**NOTA:** No se incluye el sitio web de la Agencia Espacial Federal de Rusia debido a que está bloqueado en múltiples países por conflictos políticos.
+
+<br>
+
+### Mejoras futuras
+Sabemos que la estación viaja a una gran velocidad y por lo tanto cambia de posición de una manera constante, debido a esto quiero graficar la trayectoria de la _ISS_, por medio del cálculo de su trayectoria podría trabajar en una alerta que me indique cuándo pasará cerca de una ubicación dada al programa.
 
 <br>
 
