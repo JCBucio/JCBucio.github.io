@@ -41,9 +41,10 @@ $$
 
 {% include aligner.html
   images="portfolio/total-field.png,portfolio/mag-poles.png"
+  column=2
 %}
 
-<figcaption>Izquierda/arriba: Mapa de la intensidad total del CMT para 2020 | Derecha/abajo: Cambio de los polos magnéticos norte y sur desde 1900 d.C. <br>Fuente: International Geomagnetic Reference Field: the thirteenth generation.</figcaption>
+<figcaption>Izquierda: Mapa de la intensidad total del CMT para 2020 | Derecha: Cambio de los polos magnéticos norte y sur desde 1900 d.C. <br>Fuente: International Geomagnetic Reference Field: the thirteenth generation.</figcaption>
 
 <br>
 

@@ -1,4 +1,9 @@
 jcbucio:
   name: "Juan Carlos Bucio T."
-  avatar: "https://avatars.githubusercontent.com/u/73540544?v=4"
+  avatar: "/assets/img/authors/profile-pic.png"
   url: "/about/"
+
+geos:
+  name: "Alejandro Maldonado M. - Andrea Sánchez R. - Luz Dinorah Martínez G. - Juan Carlos Bucio T. - Yarco Miriel Álvarez O."
+  avatar:
+  url:

@@ -74,9 +74,10 @@ Obspy ofrece funciones sencillas para graficar estos datos, sin embargo, la mayo
 
 {% include aligner.html
   images="posts-img/obspy-ss.png,posts-img/obspy-plt-ss.png"
+  column=2
 %}
 
-<figcaption> Izquierda/arriba: Sismogramas de Obspy sin editar. | Derecha/abajo: Mismos sismogramas personalizados con Matplotlib. </figcaption>
+<figcaption> Izquierda: Sismogramas de Obspy sin editar. | Derecha: Mismos sismogramas personalizados con Matplotlib. </figcaption>
 
 <br>
 

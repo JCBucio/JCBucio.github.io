@@ -36,10 +36,11 @@ _REDPy_ es un programa relativamente sencillo (ya que no cuenta con una interfaz
 El programa también cuenta con la flexibilidad de ajustar los parámetros de acuerdo a nuestras necesidades, esto nos permite realizar detecciones más precisas implementando parámetros más estrictos. _REDPy_ da como output mucha información importante, dentro de los archivos más importantes que el programa nos devuelve se encuentran archivos `html` en los que se grafican los datos procesados con una librería de Python llamada [Bokeh](https://bokeh.org/){:target="_blank" rel="noopener noreferrer"}.
 
 {% include aligner.html
-  images="portfolio/bokeh.png,portfolio/cluster.png"
+  images="portfolio/rsz_bokeh.png,portfolio/cluster.png"
+  column=2
 %}
 
-<figcaption>Izquierda/arriba: Resumen de los sismos repetitivos detectados. | Derecha/abajo: Cluster con una familia de sismos con un índice alto de correlación.</figcaption>
+<figcaption>Izquierda: Resumen de los sismos repetitivos detectados. | Derecha: Cluster con una familia de sismos con un índice alto de correlación.</figcaption>
 
 <br>
 

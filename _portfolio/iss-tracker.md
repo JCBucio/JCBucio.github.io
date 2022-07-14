@@ -17,10 +17,11 @@ Mini proyecto personal que consiste en un programa que establece una conexión c
 La _ISS_ (International Space Station) por sus siglas en inglés es el objeto en el espacio más grande construido por el ser humano, se trata de un proyecto internacional con agencias espaciales de todo el mundo, el primer módulo de la estación lanzado al espacio fue el módulo ruso _Zarya_ el 20 de noviembre de 1998. Una gran cantidad de módulos fueron enviados al espacio y acoplados en los años siguientes hasta su último módulo acoplado en 2011 con el vuelo final del _Programa del Transbordador Espacial_ en el orbitador _Discovery_. Desde entonces se han hecho pequeñas modificaciones para mantener la estación en uso continuo.
 
 {% include aligner.html
-  images="portfolio/proton.jpg,portfolio/discovery.jpg"
+  images="portfolio/proton.jpg,portfolio/rsz_discovery.jpg"
+  column=2
 %}
 
-<figcaption> Izquierda/arriba: Cohete ruso Proton. | Derecha/abajo: Transbordador espacial americano Discovery. </figcaption>
+<figcaption> Izquierda: Cohete ruso Proton. | Derecha: Transbordador espacial americano Discovery. </figcaption>
 
 <br>
 
