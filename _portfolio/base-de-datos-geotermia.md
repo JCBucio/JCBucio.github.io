@@ -38,14 +38,14 @@ La página web que contiene el mapa interactivo fue desarrollada en [NodeJS](htt
 
 El mapa interactivo fue trabajado en un script de *JavaScript* por medio de un framework llamado [Leaflet](https://leafletjs.com/){:target="_blank" rel="noopener noreferrer"} que nos permite georeferenciar la información almacenada en la base de datos y enviarla al usuario en una forma más agradable y dinámica.
 
-<br>
+<!-- <br>
 
 <iframe title="Mapa interactivo de Geotermia en México"
     width='1500px' height='800px' scrolling='no' frameborder='0'
     src="http://geotermia.geofisica.unam.mx/map#map-template" target="">
 </iframe>
 
-<br>
+<br> -->
 
 Para ver la página web completa puedes visitar el siguiente link: [geotermia.geofisica.unam.mx](http://geotermia.geofisica.unam.mx){:target="_blank" rel="noopener noreferrer"}
 
