@@ -10,11 +10,11 @@ feature-img: "assets/img/feature-img/travel.jpeg"
 En mi [blog](/) verás muchos posts acerca de programación con Python, un lenguaje que utilizo bastante para el procesamiento de datos y automatización de procesos. Actualmente trabajo como practicante de tecnología en [Citelis - Organización Ramírez](https://www.citelis.com.mx/){:target="_blank" rel="noopener noreferrer"} en donde participo en proyectos de *Data Science* con modelos predictivos de *Machine Learning*. En la sección de mi [portafolio](/portafolio/) podrás encontrar mis proyectos académicos y personales que he realizado así como una descripción detallada de los mismos.
 
 {% include aligner.html
-  images="posts-img/jc_magneto.jpg,posts-img/jc_radar.jpg"
+  images="posts-img/jc_magneto.jpg,posts-img/jc_paleo.png"
   column=2
 %}
 
-<figcaption>Práctica de campo en La Mintzita, Mich. 2022. Izquierda: Magnetómetro | Derecha: Georadar.</figcaption>
+<figcaption>Izquierda: Práctica de campo en La Mintzita, Mich. 2022. Magnetometría. | Derecha: Práctica de campo en Atécuaro, Mich. 2022. Paleomagnetismo.</figcaption>
 
 <br>
 
