@@ -5,7 +5,7 @@ url: "jcbucio.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: Juan Carlos Bucio T.                                    # site's title
 description: "Blog y portafolio personal"      # used by search engines
-avatar: https://avatars.githubusercontent.com/u/73540544?v=4     # Empty for no avatar in navbar
+avatar: assets/img/authors/profile-pic.png     # Empty for no avatar in navbar
 favicon: assets/pick.png                         # Icon displayed in the tab
 
 # Header and footer text
