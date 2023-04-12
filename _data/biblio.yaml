@@ -53,3 +53,23 @@
 - authors: Casas ARKO Edificaciones S. A. de C. V.
   title: "[Estudio geohidrológico-geofísico e hidrogeoquímico, en los alrededores del proyecto San Pedro municipio de Morelia, estado de Michoacán. 2008](http://www.egs.mx/casos/hidroquimica_san_pedro.pdf){:target='_blank' rel='noopener noreferrer'}"
   key: arko
+
+- authors: Tauxe, L, Banerjee, S. K., Butler, R. F. and van der Voo R.
+  title: "[Essentials of Paleomagnetism, 5th Web Edition. 2018.](https://earthref.org/MagIC/books/Tauxe/Essentials/){:target='_blank' rel='noopener noreferrer'}"
+  key: tauxe
+
+- authors: OpenAI
+  title: "[ChatGPT.](https://openai.com/blog/chatgpt){:target='_blank' rel='noopener noreferrer'}"
+  key: chatgpt
+
+- authors: OpenAI
+  title: "[Github Copilot. 2021.](https://copilot.github.com/){:target='_blank' rel='noopener noreferrer'}"
+  key: copilot
+
+- authors: Miguel Cervantes-Solano, Gerardo Cifuentes-Nava, Cecilia I. Caballero-Miranda, Avto Goguitchaichvili, Héctor López-Loera, Hugo Delgado-Granados, Juan Morales-Contreras and Jaime Urrutia-Fucugauchi
+  title: "[Estudio magnético integral de flujos de lava del volcán Xitle: implicaciones arqueológicas sobre el abandono de Cuicuilco. 2019.](http://dx.doi.org/10.18268/BSGM2019v71n2a10){:target='_blank' rel='noopener noreferrer'}"
+  key: xitle
+
+- authors: L., T., Shaar, R., Jonestrask, L., Swanson-Hysell, N., Minnett, R., Koppers, A. A. P., Constable, C. G., Jarboe, N., Gaastra, K., & Fairchild, L.
+  title: "[PmagPy: Software package for paleomagnetic data analysis and a bridge to the Magnetics Information Consortium (MagIC) database. 2019.](https://doi.org/10.1002/2016GC006307){:target='_blank' rel='noopener noreferrer'}"
+  key: pmagpy

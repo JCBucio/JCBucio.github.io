@@ -29,7 +29,7 @@ Como se mencionó antes, un rover pionero en la exploración de Marte fue el *Sp
 <br>
 
 ## Aproximación con modelos de *machine learning*
-Una definición muy acertada para definir el concepto de *machine learning* es la que se plantea en el artículo de [*Gavin Edwards "Machine Learning | An Introduction"*](https://towardsdatascience.com/machine-learning-an-introduction-23b84d51e6d0){:target="_blank" rel="noopener noreferrer"}:
+Una definición muy acertada para el concepto de *machine learning* es la que se plantea en el artículo de [*Gavin Edwards "Machine Learning | An Introduction"*](https://towardsdatascience.com/machine-learning-an-introduction-23b84d51e6d0){:target="_blank" rel="noopener noreferrer"}:
 
 > **Machine learning** is a tool for turning information into knowledge.
 
