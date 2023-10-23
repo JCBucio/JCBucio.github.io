@@ -72,11 +72,11 @@ Para leer los datos y poder añadir la capa de topografía a la gráfica 3D se u
 <br>
 
 ## Modelo 3D
-Para realizar la graficación de los datos sísmicos y de topografía se utilizaron los módulos `go.Scatter3d` y `go.Surface` de *Plotly* respectivamente en la misma figura, de manera que pudieran ser apreciables las ubicaciones de los sismos en los 3 ejes (x, y, z). Adicionalmente, *Plotly* nos permite desplegar los datos de un punto específico en la topografía, o bien de un sismo en específico al pasar el cursor sobre el punto en la gráfica. Para poder interactuar mejor con la gráfica se puede visualizar directamente en el link del sitio: [https://enjambre-michoacan.up.railway.app/](https://enjambre-michoacan.up.railway.app/){:target="_blank" rel="noopener noreferrer"}
+Para realizar la graficación de los datos sísmicos y de topografía se utilizaron los módulos `go.Scatter3d` y `go.Surface` de *Plotly* respectivamente en la misma figura, de manera que pudieran ser apreciables las ubicaciones de los sismos en los 3 ejes (x, y, z). Adicionalmente, *Plotly* nos permite desplegar los datos de un punto específico en la topografía, o bien de un sismo en específico al pasar el cursor sobre el punto en la gráfica. Para poder interactuar mejor con la gráfica se puede visualizar directamente en el link del sitio: [https://enjambre-sismico-mich.onrender.com/](https://enjambre-sismico-mich.onrender.com/){:target="_blank" rel="noopener noreferrer"}
 
 <iframe title="Enjambre sísmico Michoacán 2019-2022"
     width='100%' height='1000px' scrolling='no' frameborder='0' style="background: #FFFFFF;"
-    src="https://enjambre-michoacan.up.railway.app/">
+    src="https://enjambre-sismico-mich.onrender.com/">
 </iframe>
 
 <br>
@@ -100,10 +100,7 @@ Además de estos componentes, es posible desactivar las capas para ocultar la to
 <br>
 
 ### Despliegue de la app
-Para desplegar la aplicación se utilizó la plataforma [Railway](https://railway.app/){:target="_blank" rel="noopener noreferrer"}, esta plataforma nos permite desplegar aplicaciones web de manera gratuita y con un tiempo de respuesta bastante rápido. Para poder desplegar la aplicación, *Railway* nos da la opción de conectar nuestro [repositorio de *Github*](https://github.com/JCBucio/enjambre-sismico-mich){:target="_blank" rel="noopener noreferrer"} y así, poder desplegar la aplicación cada vez que se hagan cambios al código fuente. En [este link](https://nixpacks.com/docs/providers/python){:target="_blank" rel="noopener noreferrer"} se describen los requisitos para desplegar una app de *Python* en *Railway*.
-
-{% include aligner.html images="portfolio/railway-logo.png" column=1 %}
-<figcaption>Railway logo.</figcaption>
+Para desplegar la aplicación se utilizó la plataforma [Render](https://render.com/){:target="_blank" rel="noopener noreferrer"}, esta plataforma nos permite desplegar aplicaciones web de manera gratuita y con un tiempo de respuesta bastante rápido. Para poder desplegar la aplicación, *Render* nos da la opción de conectar nuestro [repositorio de *Github*](https://github.com/JCBucio/enjambre-sismico-mich){:target="_blank" rel="noopener noreferrer"} y así, poder desplegar la aplicación cada vez que se hagan cambios al código fuente.
 
 <br>
 
