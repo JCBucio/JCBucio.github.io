@@ -9,7 +9,7 @@ avatar: assets/img/authors/profile-pic.png     # Empty for no avatar in navbar
 favicon: assets/pick.png                         # Icon displayed in the tab
 
 # Header and footer text
-header_text: Ciencia de datos | Geociencias | Geofísica  # Change Blog header text
+header_text: Ciencia de datos, Geofísica y algo de senderismo  # Change Blog header text
 header_feature_image: assets/img/feature-img/earth.jpg
 footer_text: >
   <i>Juan Carlos Bucio T.<br>Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap" target="_blank" rel="noopener noreferrer">Type-on-Strap</a></i>
@@ -39,6 +39,13 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:name
+    order: 
+      - magnetopy.md
+      - base-de-datos-geotermia.md
+      - enjambre-sismico-mich.md
+      - redpy.md
+      - iss-tracker.md
+      - mi-sitio-web.md
 
 # BUILD SETTINGS
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-figure]

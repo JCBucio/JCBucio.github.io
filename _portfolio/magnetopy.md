@@ -7,29 +7,58 @@ tags: [Portafolio]
 excerpt_separator: <!--more-->
 permalink: /portafolio/MagnetoPy
 ---
-![image]({{ "assets/img/portfolio/magnetic_field.jpg" | relative_url }})
-
-_MagnetoPy_ es una _CLI_ (Command Line Interface) de Python que procesa datos de campo magnético provenientes de estaciones en campo y estaciones base para obtener la variación diurna así como los valores de intensidad del campo magnético provenientes del _IGRF_.<!--more--> Escribí _MagnetoPy_ con la intención de hacer el procesamiento de datos de campo magnético mucho más fácil, rápido y eficiente.
-
-Este proyecto lo desarrollé para mi materia de Magnetometría, donde trabajamos con instrumentos que miden la intensidad del campo magnético en un perfil de campo con el objetivo de detectar anomalías que puedan indicarnos la presencia de un objeto subterráneo o capas de distintos tipos de rocas.
+{% include aligner.html images="portfolio/magnetic-field.png" %}
 
 <br>
 
-## ¿Qué es el Campo Magnético Terrestre?
-El Campo Magnético Terrestre (_CMT_) o Campo Geomagnético es un gran magneto con dirección norte-sur coincidente con el eje de rotación de la Tierra[^1]. Las líneas de campo que se generan por este magneto salen por el polo norte magnético y convergen en el polo sur magnético. De acuerdo a _Muniz (1997)_, el Campo Magnético Terrestre se integra por cuatro fuentes principales:
+_MagnetoPy_ es una CLI (_Command Line Interface_) _open source_ escrita en Python, diseñada para procesar datos magnéticos. Con un conjunto robusto de comandos, _MagnetoPy_ tiene como objetivo simplificar el análisis y la manipulación de datos magnéticos para los geofísicos en el campo.<!--more--> Este es mi proyecto de tesis de la licenciatura en Ciencias de la Tierra, el cual sigue en desarrollo y en constante actualización.
 
-- **El campo principal**: Generado por el núcleo externo líquido de la Tierra ubicado a unos 2,900 km de profundidad aproximadamente y compuesto principalmente por Hierro (Fe) y Níquel (Ni). Se cree que las corrientes de convección de este material conductor en el núcleo actúan como un gran dínamo generando aproximadamente 90% del campo total.
+En este post escribí un poco de la teoría y los fundamentos bajo los cuales está escrito este software. Si quieres ir directo a la sección de cómo utilizar _MagnetoPy_ puedes seleccionar el enlace **Utilizando _MagnetoPy_** en el índice de contenidos.
 
-- **El campo cortical**: Generado por la magnetización de las rocas en la corteza terrestre en donde las temperaturas son menores a la [_temperatura de Curie_](https://analyzing-testing.netzsch.com/es/training-know-how/glosario/temperatura-de-curie){:target="_blank" rel="noopener noreferrer"}, los minerales en esta zona son muy ricos en Hierro (Fe). Este campo es el más estable, presenta variaciones en periodos de cientos de miles de años.
+> **Última actualización:** 25 de junio de 2024.
 
-- **El campo externo**: Su origen está en la interacción del viento solar con la capa magnética que envuelve la Tierra (Magnetósfera). A su vez, esta interacción se proyecta hasta la Ionósfera generando variaciones diurnas que dependen de periodos de perturbación, tormentas solares o magnetopulsaciones.
+* TOC
+{:toc}
 
-- **El campo magnético por inducción electromagnética**: Es generado por corrientes eléctricas inducidas en la corteza y manto por las variaciones externas de campo.
+<br>
+
+## Resumen
+
+El Campo Magnético Terrestre (CMT) se conforma de diferentes magnitudes vectoriales representadas desde un punto en la superficie terrestre; las componentes horizontal $$(H)$$ y vertical $$(Z)$$, donde $$(H)$$ se caracteriza por contar con un norte $$(X)$$ y este $$(Y)$$ geográficos. La relación angular entre $$(H)$$ y $$(X)$$ se define como la declinación $$(D)$$, mientras que la relación angular entre $$(H)$$ y el campo total $$(N)$$, corresponde a la inclinación $$(I)$$ [^1]. En un levantamiento magnetométrico, un dato magnético medido en una estación $$(P)$$ a un tiempo $$(t)$$ es una superposición de efectos, incluyendo el campo principal interno, la inducción de fuentes externas y la inducción debida a cuerpos anómalos magnetizados. El campo geomagnético no es constante en el tiempo, sino que tiene una variación lenta, estas variaciones se conocen como variaciones seculares, las cuales se producen por el movimiento convectivo del núcleo externo. Asimismo, existen variaciones externas que son producidas en rangos menores de tiempo (desde algunas horas hasta meses), principalmente generadas por cambios en las corrientes eléctricas en la atmósfera superior. Debido a que el campo principal interno representa un 95% del dato magnético, es necesario aplicar correcciones que puedan aislar la componente de interés [^2].
+
+{% include aligner.html 
+  images="portfolio/north_south_magnetic_field.png,portfolio/earth_magnetic_field_components.png" 
+  column=2
+%}
+<figcaption>Componentes del campo magnético terrestre. Recuperado de Hinze et al., 2013.</figcaption>
+
+<br>
+
+Este trabajo busca generar un _software open source_ que incluya diferentes reducciones y filtros necesarios para realizar un correcto procesamiento e interpretación de datos obtenidos de levantamientos magnetométricos.
+
+<br>
+
+## Introducción
+
+Las mediciones de anomalías magnéticas de campo total son ampliamente utilizadas en la exploración geofísica debido a su bajo costo y a su facilidad de adquisición. Durante un levantamiento magnetométrico, la adquisición de datos se ve afectada por variaciones temporales causadas por corrientes eléctricas ionosféricas, un efecto que se encuentra presente todo el tiempo y el cual puede ser compensado mediante mediciones de una estación base, a su vez, las variaciones seculares representan una fuente importante de ruido para los datos recopilados, es por ello que la _International Association of Geomagnetism and Aeronomy_ (IAGA) desarrolló el _International Geomagnetic Reference Field_ (IGRF), una serie de armónicos esféricos para representar el campo global en cuatro dimensiones: latitud, longitud, distancia geocéntrica (altitud), y tiempo [^2].
+
+Debido a que la medición del campo magnético consiste en una superposición de múltiples fuentes, el proceso para eliminar o atenuar estos efectos se vuelve de gran importancia para la interpretación de las anomalías. Existen técnicas que permiten aislar la componente de interés mediante filtros o transformaciones, un ejemplo de las mismas es la reducción al polo, la cual permite trasladar el punto de observación al polo geomagnético para visualizar la anomalía como si se estuviera justo encima. Esta técnica permite eliminar las variaciones horizontales producidas por el campo geomagnético y proporciona un mejor punto de interpretación para la fuente observada [^2]. 
+
+<br>
+
+<div style="text-align:center">
+  {% include aligner.html images="portfolio/magnetic_anomalies.png" column=1 %}
+  <figcaption>Superposición de anomalías magnéticas. Recuperado de Hinze et al., 2013.</figcaption>
+</div>
+
+<br>
+
+Actualmente se cuenta con una amplia variedad de software que realiza estas correcciones de manera automática, sin embargo, pocos de estos programas permiten el acceso al código fuente, el cual facilita entender las transformaciones que realiza a los datos, y a su vez, proporciona flexibilidad al usuario para manipular los parámetros de las mismas.
 
 <br>
 
 ## ¿Qué es el IGRF?
-El _IGRF_ (International Geomagnetic Reference Field) por sus siglas en inglés es un conjunto de coeficientes esféricos armónicos que pueden ser introducidos en un modelo matemático para describir la porción a gran escala y variable en el tiempo del campo magnético interno de la Tierra entre épocas desde 1900 d.C. hasta la actualidad. El _IGRF_ es calculado y producido por un grupo de trabajo internacional de científicos denominado _IAGA_ (International Association of Geomagnetism and Aeronomy). La actual decimotercera generación del _IGRF_ ha sido derivada de observaciones recopiladas por satélites, observatorios en tierra y estudios magnéticos en todo el mundo.[^2]
+El IGRF (_International Geomagnetic Reference Field_) por sus siglas en inglés es un conjunto de coeficientes esféricos armónicos que pueden ser introducidos en un modelo matemático para describir la porción a gran escala y variable en el tiempo del campo magnético interno de la Tierra entre épocas desde 1900 d.C. hasta la actualidad. El IGRF es calculado y producido por un grupo de trabajo internacional de científicos denominado IAGA (_International Association of Geomagnetism and Aeronomy_). La actual decimotercera generación del IGRF ha sido derivada de observaciones recopiladas por satélites, observatorios en tierra y estudios magnéticos en todo el mundo.[^3]
 
 Las series de modelos matemáticos utilizadas para calcular el Campo Magnético Terrestre pueden representarse en la siguiente expresión:
 
@@ -49,139 +78,82 @@ $$
 <br>
 
 ## Utilizando _MagnetoPy_
-El procedimiento que sigue _MagnetoPy_ para procesar los datos consta de recibir un archivo con los datos obtenidos de las estaciones en campo y otro archivo con los datos de las estaciones base, los archivos deben tener extensión `csv` y contar solamente con una primera línea correspondiente al nombre de cada columna seguida de los datos recopilados, las columnas mínimas necesarias de cada archivo son las siguientes:
-
-- **Archivo estaciones**
-    - _date_: Fecha de cada medición en formato `DD/MM/YYYY`.
-    - _time_: Hora de cada medición en formato `HH:MM:SS`.
-    - _station_: Número de estación en campo.
-    - _magfield_: Intensidad de campo magnético medida en `nT` de cada estación.
-    - _lat_: Latitud de la estación en coordenadas geográficas.
-    - _lon_: Longitud de la estación en coordenadas geográficas.
-
-- **Archivo estaciones base**
-    - _date_: Fecha de cada medición en formato `DD/MM/YYYY`.
-    - _time_: Hora de cada medición en formato `HH:MM:SS`.
-    - _magfield_: Intensidad de campo magnético medida en `nT` de cada estación base.
-    - _sq_: Resoluciones de cada medición (depende del instrumento).
-
-El nombre de cada columna puede ser cualquiera ya que el programa nos permite declarar las columnas que usaremos en cada archivo, los nombres declarados arriba son una recomendación.
-
-Aquí puedes descargar _MagnetoPy_ para comenzar a utilizarlo, también se detallan instrucciones para crear un ambiente virtual y ejecutar el programa:
-- [https://github.com/JCBucio/MagnetoPy](https://github.com/JCBucio/MagnetoPy){:target="_blank" rel="noopener noreferrer"}
-
-Con el siguiente comando corremos nuestro programa:
-```
->> python magnetopy.py stationsfile.csv basefile.csv output.csv
-```
-
-Una vez que se le ha dado toda la información necesaria a _MagnetoPy_ para procesar los datos el programa realiza un _matching_ de los horarios más cercanos de mediciones en estaciones base con mediciones en estaciones móviles, asigna el valor de campo magnético a la última y calcula la variación diurna para esa medición. Veremos lo siguiente en nuestra terminal:
-
-```
-############## MAGNETIC FIELD DATA FORMATTER ##############
-##                                                       ##  
-##  Written by Juan Carlos Bucio (jcbucio.geo@gmail.com) ##
-##               Licensed under MIT license              ##
-##                                                       ##
-###########################################################
-
-
---- STATIONS FILE PARAMETERS ---
-
-Enter the columns names of the file
-Date column: date
-Time column: time
-Stations column: station
-Magnetic field column: magfield
-Latitude column: gpslat
-Longitude column: gpslon
-
-Columns found!
-
-
---- BASE STATIONS FILE PARAMETERS ---
-
-Enter the columns names of the file
-Date column: date
-Time column: time
-Magnetic field column: nT
-Resolution column: sq
-
-Columns found!
-
-Finding closest matches in time of base stations...
-
-Matches and diurnal variation completed!
-```
-
-Una vez que se calcularon todas las variaciones diurnas de cada estación se solicita la intensidad del campo magnético a una _API_ (Aplication Programming Interface) del _IGRF_, a la cual se le pasarán los parámetros de nuestras mediciones para obtener medidas específicas de cada localización. El tiempo que tome este proceso puede variar bastante ya que la _API_ que se está solicitando solamente permite 50 conexiones por segundo para todos los usuarios en el mundo, debido a esto es posible que no se puedan obtener los datos solicitados si el servidor se encuentra saturado.
-```
-Requesting IGRF data...
-
-10 requests completed...
-20 requests completed...
-30 requests completed...
-40 requests completed...
-50 requests completed...
-60 requests completed...
-70 requests completed...
-80 requests completed...
-90 requests completed...
-100 requests completed...
-110 requests completed...
-120 requests completed...
-130 requests completed...
-140 requests completed...
-150 requests completed...
-160 requests completed...
-170 requests completed...
-
-170 requests completed in 1.369 minutes
-
-
---- OUTPUT FILE ---
-
-Data succesfully saved in: output.csv
-
-Total time spent: 2.480 minutes
-```
-
-Finalmente el programa nos da como output un archivo `csv` con el nombre que previamente asignamos, además de las columnas en nuestros dos archivos procesados también veremos los siguientes datos:
-
-- **diff_time**: Diferencia de tiempo entre la medición de la estación móvil y la medición de la estación base.
-- **base_magfield_mean**: Promedio en un día del campo magnético de las estaciones base.
-- **diurnal_var**: Variación diurna de la intensidad de campo magnético para cada medición.
-- **diurnal_var_corr**: Corrección por variación diurna.
-- **igrf_intensity**: Intensidad total del campo magnético para cada medición proveniente del _IGRF_.
-- **igrf_res_field**: Campo magnético residual calculado a partir de la intensidad total del campo magnético obtenida del _IGRF_.
+_MagnetoPy_ funciona como CLI y por lo tanto se puede ejecutar desde la terminal, sin embargo, yo recomiendo utilizar el IDE (_Integrated Development Environment_) [PyCharm](https://www.jetbrains.com/pycharm/download/) debido a que permite administrar los ambientes virtuales de nuestra máquina en el caso de tener múltiples proyectos de _Python_ para evitar conflictos de versiones, además de que facilita la configuración de los diferentes parámetros de _MagnetoPy_, los cuales pueden ser muy extensos para algunos comandos.
 
 <br>
 
-## Convertir archivos GPX a CSV
-Es bastante común que si no contamos con un _GPS_ al hacer nuestros levantamientos en campo tengamos que recurrir a ubicar nuestras estaciones móviles por medio de softwares como Google Earth o _SIGs_ (Sistemas de Información Geográfica) que suelen devolvernos los archivos de nuestra planeación de campo en formato _GPX_, el cual contiene las coordenadas y los números de cada una de nuestras estaciones y perfiles. Sin embargo, cuando realizamos perfiles muy extensos es tedioso buscar nuestra estación y cotejarla con la lectura de nuestro instrumento por medio de los softwares anteriormente mencionados, para resolver este problema añadí un pequeño programa llamado `gpx_converter.py` que puedes encontrar en el repositorio de _MagnetoPy_. Para utilizar este convertidor de archivos gpx a csv solo necesitamos instalar el paquete [gpxpy](https://github.com/tkrajina/gpxpy){:target="_blank" rel="noopener noreferrer"} dentro de nuestro ambiente virtual de la siguiente manera:
+### Preparación del ambiente de trabajo
+Para utilizar _MagnetoPy_ es necesario tener instalado lo siguiente:
 
-```
->> conda install -c conda-forge gpxpy
-```
+- [Python 3.11.0](https://www.python.org/downloads/) o superior.
+- [Git](https://git-scm.com/downloads) para clonar el repositorio.
+- [PyCharm](https://www.jetbrains.com/pycharm/download/) (recomendado).
 
-Una vez que tenemos el paquete instalado podemos convertir cualquier archivo gpx a csv con el siguiente comando:
+<br>
 
-```
->> python gpx_converter.py file.gpx output_file.csv
-```
+### Instalación
+Para instalar _MagnetoPy_ es necesario clonar el repositorio desde la terminal con el siguiente comando:
 
-Veremos un output como el siguiente:
-
-```
-Data saved in: output_file.csv
+```bash
+git clone https://github.com/JCBucio/MagnetoPy.git
 ```
 
-Las columnas que podremos ver en nuestro archivo csv son las siguientes:
+Posteriormente, abriremos el proyecto en PyCharm de la siguiente manera:
+1. Abrimos PyCharm.
+2. Seleccionamos la opción _Open_.
+3. Buscamos la carpeta _MagnetoPy_ y la seleccionamos.
+4. Copiamos la carpeta `runConfigurations` en la carpeta `.idea` del proyecto.
 
-- **route**: Número de nuestra ruta, esto es en el caso de que nuestra planeación de estaciones tenga múltiples líneas de perfiles.
-- **station**: Número de nuestra estación en el perfil (ruta) correspondiente.
-- **latitude**: Latitud en coordenadas geográficas.
-- **longitude**: Longitud en coordenadas geográficas.
+> **Nota**: Si la carpeta `.idea` no aparece en los archivos del proyecto, puedes intentar cerrar PyCharm y volver a abrirlo. Si aún no aparece, puedes copiar la carpeta `runConfigurations` en la carpeta `.idea` de manera manual en el explorador de archivos.
+
+Antes de ejecutar cualquier comando de _MagnetoPy_ es necesario crear un ambiente virtual para el proyecto, para realizar esto en PyCharm sigue los siguientes pasos:
+
+1. Abre el proyecto en PyCharm.
+2. Dirígete a `File > Settings`.
+3. En la ventana de configuración selecciona `Project: MagnetoPy` > `Python Interpreter`.
+4. Haz clic en el engrane y selecciona `Add`.
+5. Selecciona `Virtualenv Environment`.
+6. En la opción de `Location` selecciona la carpeta en donde quieres crear el ambiente virtual del proyecto (yo recomiendo crearlo en la carpeta del proyecto).
+7. Haz clic en `OK`.
+
+> **Nota**: PyCharm nos solicitará crear el ambiente virtual en una carpeta vacía, puedes crear una con el nombre que tú desees (yo recomiendo nombrarla `env`) en la carpeta del proyecto.
+
+Para instalar las dependencias del proyecto en el ambiente virtual sigue los siguientes pasos:
+
+1. Abre el proyecto en PyCharm.
+2. Abre el archivo `requirements.txt` del proyecto.
+3. Haz clic en `Install requirements`.
+
+<br>
+
+### Ejecutando _MagnetoPy_
+
+Para consultar una descripción de _MagnetyoPy_ y de cada uno de los comandos disponibles, ejecuta el siguiente comando en la terminal:
+
+```
+python magnetopy.py --help
+```
+
+O bien:
+  
+```
+python magnetopy.py <command> --help
+```
+
+Por ejemplo, para consultar la descripción del comando `diurnal-variation` ejecuta el siguiente comando:
+
+```
+python magnetopy.py diurnal-variation --help
+```
+
+<br>
+
+### Comandos disponibles
+
+_MagnetoPy_ sigue en desarrollo y por lo tanto se irán agregando más comandos y funciones a la CLI, a continuación se muestra una lista de los comandos disponibles hasta la fecha:
+
+- `diurnal-variation`: Corrección por variación diurna utilizando datos de una estación base.
+- `calculate-igrf`: Corrección por IGRF calculando el campo magnético total.
 
 <br>
 
@@ -195,5 +167,6 @@ _Si tienes algún comentario, sugerencia u opinión házmelo saber en los coment
 
 <br>
 
-[^1]: {% include citation.html key="magfield" %}
-[^2]: {% include citation.html key="igrf-13" %}
+[^1]: {% include citation.html key="blakely" %}
+[^2]: {% include citation.html key="hinze" %}
+[^3]: {% include citation.html key="igrf-13" %}

@@ -19,7 +19,7 @@
   key: spoc_mars
 
 - authors: Alken, P., Thébault, E., Beggan, C.D. et al.
-  title: "[International Geomagnetic Reference Field: the thirteenth generation](https://doi.org/10.1186/s40623-020-01288-x){:target='_blank' rel='noopener noreferrer'}"
+  title: "[International Geomagnetic Reference Field: the thirteenth generation. Earth, Planets And Space, 73(1). 2021.](https://doi.org/10.1186/s40623-020-01288-x){:target='_blank' rel='noopener noreferrer'}"
   key: igrf-13
 
 - authors: H. Hernández.
@@ -73,3 +73,12 @@
 - authors: L., T., Shaar, R., Jonestrask, L., Swanson-Hysell, N., Minnett, R., Koppers, A. A. P., Constable, C. G., Jarboe, N., Gaastra, K., & Fairchild, L.
   title: "[PmagPy: Software package for paleomagnetic data analysis and a bridge to the Magnetics Information Consortium (MagIC) database. 2019.](https://doi.org/10.1002/2016GC006307){:target='_blank' rel='noopener noreferrer'}"
   key: pmagpy
+
+- authors: William J. Hinze, Ralph R. B. Von Frese & Afif H. Saad.
+  title: "[Gravity and Magnetic Exploration: Principles, Practices and Applications. Cambridge University Press. 2013.](https://doi.org/10.1017/CBO9780511843129){:target='_blank' rel='noopener noreferrer'}"
+  key: hinze
+
+- authors: Blakely, R.J.
+  title: "[Potential theory in gravity and magnetic applications. Cambridge University Press. 1994.](https://doi.org/10.1017/CBO9780511549816){:target='_blank' rel='noopener noreferrer'}"
+  key: blakely
+
