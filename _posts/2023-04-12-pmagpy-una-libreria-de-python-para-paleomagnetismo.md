@@ -11,7 +11,7 @@ feature-img: "assets/img/thumbnails/nasa-unsplash.jpg"
 
 <!--more-->
 
-💡 Parte del contenido de este post fué creado con ayuda de ChatGPT[^2] y Github Copilot[^3], dos herramientas de IA que generan texto y código mediante el uso de modelos de lenguaje natural. Todo el contenido generado por medio de dichas herramientas fué revisado cuidadosamente.
+💡 Parte del contenido de este post fué creado con ayuda de ChatGPT[^2] y Github Copilot[^3], dos herramientas de IA que generan texto y código mediante el uso de modelos de lenguaje natural. Todo el contenido generado por medio de dichas herramientas fue revisado cuidadosamente.
 
 * TOC
 {:toc}
